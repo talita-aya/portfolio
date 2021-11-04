@@ -2,26 +2,25 @@
   max-width: 100vw;
   max-height: 100vh;
   background-image: url('./assets/background.png');
+  background-size: cover;
+  background-color: #000;
 }
 
-h1 {
+.title {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-weight: 400;
-  color: #E0E0E0;
-  font-size: 70px;
+  color: #bfbfbf;
 }
 
-h1:after {
-  content : "";
-  position : absolute;
-  width : 20%;
-  height : 3px;
-  background-color: #E0E0E0;
-  bottom: 330px; 
+.title h1 {
+  border: 3px solid #bfbfbf;
+  font-weight: 500;
+  font-size: 50px;
+  padding: 30px 40px;
 }
 
 a {
@@ -30,10 +29,12 @@ a {
   right: 50px;
   display: flex;
   align-items: center;
-  color: #E0E0E0;
-  font-size: 20px;
+  color: #bfbfbf;
+  font-size: 16px;
 }
 
 footer a img {
   margin-right: 10px;
+  color: #bfbfbf;
+  width: 30px;
 }

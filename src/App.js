@@ -6,7 +6,10 @@ import Instagram from './assets/instagram.svg';
 function App() {
   return (
     <div className="container">
-      <h1>COMING SOON</h1>
+      <div className="title">
+        <h1>COMING SOON</h1>
+      </div>
+      <div className="layer"></div>
 
       <footer>
         <a target="_blank" href="https://www.instagram.com/talita.aya/">
