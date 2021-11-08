@@ -1,23 +1,13 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import './App.css';
-import Instagram from './assets/instagram.svg';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="container">
-      <div className="title">
-        <h1>COMING SOON</h1>
-      </div>
-      <div className="layer"></div>
-
-      <footer>
-        <a target="_blank" href="https://www.instagram.com/talita.aya/">
-          <img src={Instagram} alt="instagram logo" />
-          @talita.aya
-        </a>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <Routes /> 
+    </BrowserRouter>
   );
 }
 
