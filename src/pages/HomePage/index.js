@@ -16,9 +16,9 @@ function Index(){
       <header className="navbar">
         <ul>
           <li className="enabled">Home</li>
-          <li onClick={() => navigate('Sobre')}>Sobre</li>
-          <li onClick={() => navigate('Portfolio')}>Portfólio</li>
-          <li onClick={() => navigate('Contato')}>Contato</li>
+          <li onClick={() => navigate('/sobre')}>Sobre</li>
+          <li onClick={() => navigate('/portfolio')}>Portfólio</li>
+          <li onClick={() => navigate('/contato')}>Contato</li>
         </ul>
       </header>
 
