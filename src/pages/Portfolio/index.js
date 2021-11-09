@@ -6,6 +6,8 @@ import "./style.css";
 import Meus from './../../assets/backgroundWords/meus.svg';
 import Projetos1 from './../../assets/backgroundWords/projetos1.svg';
 import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
+import DownArrow from './../../assets/down arrow.svg';
+
 
 function Index() {
   const navigate = useNavigate();
@@ -35,6 +37,10 @@ function Index() {
 
       <section className="portfolio-title-projetos2">
         <img className="animate__animated animate__fadeIn" src={Projetos2} alt="palavra background" />
+      </section>
+
+      <section className="portfolio-down">
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
       </section>
     </div>
   );

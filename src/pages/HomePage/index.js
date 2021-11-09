@@ -29,7 +29,9 @@ function Index(){
 
       <section className="title">
         <h1 className="main-title animate__animated animate__fadeIn">TALITA AYA</h1>
-        <img className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
+        <div className="image">
+          <img className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
+        </div>
       </section>
 
       <section className="down">

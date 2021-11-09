@@ -54,3 +54,19 @@
   font-weight: bold;
   letter-spacing: 10px;
 }
+
+.portfolio-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 80px;
+  opacity: 0.5;
+}
+
+.portfolio-down img {
+  cursor: pointer;
+  width: 50px;
+}
