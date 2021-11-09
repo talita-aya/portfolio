@@ -36,10 +36,10 @@ function Index() {
       </section>
 
       <section className="socials">
-        <img src={Instagram} alt="redes sociais" />
-        <img src={Linkedin} alt="redes sociais" />
-        <img src={Github} alt="redes sociais" />
-        <img src={Email} alt="redes sociais" />
+        <a target="_blank" href="https://www.instagram.com/talita.aya/"><img src={Instagram} alt="redes sociais" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/talita-aya-sakamoto-kuriki-093b0a1b6/"><img src={Linkedin} alt="redes sociais" /></a>
+        <a target="_blank" href="https://github.com/talita-aya"><img src={Github} alt="redes sociais" /></a>
+        <a target="_blank" href="mailto:kurikitalita@gmail.com"><img src={Email} alt="redes sociais" /></a>
       </section>
     </div>
   );
