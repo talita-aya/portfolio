@@ -2,6 +2,8 @@ import React from 'react';
 
 import './style.css';
 import HomeBackground from './../../assets/background.png';
+import BackgroundName from './../../assets/background-name.svg';
+import DownArrow from './../../assets/down arrow.svg'
 
 const index = () => {
   return (
@@ -17,7 +19,16 @@ const index = () => {
 
       <section className="image">
         <img src={HomeBackground} alt="background da home page" />
-        <div className="blur"></div>
+        <div className="shadow-image"></div>
+      </section>
+
+      <section className="title">
+        <h1 className="main-title">TALITA AYA</h1>
+        <img src={BackgroundName} alt="nome background" />
+      </section>
+
+      <section className="down">
+        <img src={DownArrow} alt="seta para baixo" />
       </section>
 
     </div>
