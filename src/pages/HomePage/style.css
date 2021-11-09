@@ -94,5 +94,22 @@
   align-items: center;
   justify-content: flex-end;
   padding: 30px 80px;
+}
+
+.down img {
   cursor: pointer;
+  width: 50px;
+}
+
+.down img:hover {
+  width: 55px;
+  transition: all 0.5s ease-in-out;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 5s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 5s;
 }

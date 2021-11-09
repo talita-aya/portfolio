@@ -1,9 +1,10 @@
 import React from 'react';
 
 import './style.css';
+import 'animate.css';
 import HomeBackground from './../../assets/background.png';
 import BackgroundName from './../../assets/background-name.svg';
-import DownArrow from './../../assets/down arrow.svg'
+import DownArrow from './../../assets/down arrow.svg';
 
 const index = () => {
   return (
@@ -23,12 +24,12 @@ const index = () => {
       </section>
 
       <section className="title">
-        <h1 className="main-title">TALITA AYA</h1>
+        <h1 className="main-title animate__animated animate__fadeIn">TALITA AYA</h1>
         <img src={BackgroundName} alt="nome background" />
       </section>
 
       <section className="down">
-        <img src={DownArrow} alt="seta para baixo" />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
       </section>
 
     </div>
