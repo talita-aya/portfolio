@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router';
 
 import 'animate.css';
 import './style.css';
-import Sobre from './../../assets/sobre.svg';
-import Mim from './../../assets/mim.svg';
+import Sobre from './../../assets/backgroundWords/sobre.svg';
+import Mim from './../../assets/backgroundWords/mim.svg';
 
 
 function Index (){
@@ -22,11 +22,11 @@ function Index (){
       </header>
 
       <section className="about-title-sobre">
-        <img className="animate__animated animate__fadeIn" src={Sobre} alt="nome background" />
+        <img className="animate__animated animate__fadeIn" src={Sobre} alt="palavra background" />
       </section>
       
       <section className="about-title-mim">
-        <img className="animate__animated animate__fadeIn" src={Mim} alt="nome background" />
+        <img className="animate__animated animate__fadeIn" src={Mim} alt="palavra background" />
       </section>
      
       <section className="about-me-text">

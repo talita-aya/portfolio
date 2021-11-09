@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 import './style.css';
 import 'animate.css';
 import HomeBackground from './../../assets/background.png';
-import BackgroundName from './../../assets/background-name.svg';
+import BackgroundName from './../../assets/backgroundWords/talita.svg';
 import DownArrow from './../../assets/down arrow.svg';
 
 
@@ -29,7 +29,9 @@ function Index(){
 
       <section className="title">
         <h1 className="main-title animate__animated animate__fadeIn">TALITA AYA</h1>
-        <img className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
+        <div className="image">
+          <img className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
+        </div>
       </section>
 
       <section className="down">
