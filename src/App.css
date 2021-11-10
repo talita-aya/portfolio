@@ -9,3 +9,7 @@
   list-style: none;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

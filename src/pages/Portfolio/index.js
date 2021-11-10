@@ -42,18 +42,18 @@ function Index() {
       </section>
 
       <section className="portfolio-down">
-        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 800)} />
       </section>
 
       <section className="projects">
         <div className="project-container">
           <img src={UTask} alt="projeto" className="project-image"/>
-          <p>Nome do projeto aqui</p>
+          <p>UTask 2.0</p>
         </div>
 
         <div className="project-container">
           <img src={PortfolioPage} alt="projeto" className="project-image"/>
-          <p>Nome do projeto aqui</p>
+          <p>Meu Portfólio</p>
         </div>
       </section>
 
