@@ -7,6 +7,7 @@ import Meus from './../../assets/backgroundWords/meus.svg';
 import Projetos1 from './../../assets/backgroundWords/projetos1.svg';
 import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
 import DownArrow from './../../assets/down arrow.svg';
+import UTask from './../../assets/portfolio/utask.png';
 
 
 function Index() {
@@ -42,6 +43,14 @@ function Index() {
       <section className="portfolio-down">
         <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
       </section>
+
+      <section className="projects">
+        <div className="project-container">
+          <img src={UTask} alt="projeto" className="project-image"/>
+          <p>Nome do projeto aqui</p>
+        </div>
+      </section>
+
     </div>
   );
 }
