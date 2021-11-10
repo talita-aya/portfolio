@@ -72,8 +72,9 @@
 }
 
 .projects {
+  display: flex;
   max-width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-color: #0E0D0B;
   margin-top: -90px;
 }
@@ -82,8 +83,8 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-left: 50px;
-  padding-top: 120px;
+  margin-left: 6%;
+  padding-top: 150px;
   align-items: center;
 }
 
@@ -95,7 +96,7 @@
 }
 
 .project-container img:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .project-container p {

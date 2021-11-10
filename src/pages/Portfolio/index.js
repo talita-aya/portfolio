@@ -8,6 +8,7 @@ import Projetos1 from './../../assets/backgroundWords/projetos1.svg';
 import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
 import DownArrow from './../../assets/down arrow.svg';
 import UTask from './../../assets/portfolio/utask.png';
+import PortfolioPage from './../../assets/portfolio/portfolio.png';
 
 
 function Index() {
@@ -47,6 +48,11 @@ function Index() {
       <section className="projects">
         <div className="project-container">
           <img src={UTask} alt="projeto" className="project-image"/>
+          <p>Nome do projeto aqui</p>
+        </div>
+
+        <div className="project-container">
+          <img src={PortfolioPage} alt="projeto" className="project-image"/>
           <p>Nome do projeto aqui</p>
         </div>
       </section>
