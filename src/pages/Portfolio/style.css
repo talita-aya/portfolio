@@ -97,6 +97,7 @@
   border-radius: 5px;
   cursor: pointer;
   opacity: 0.9;
+  margin-left: 60px;
 }
 
 .project-container img:hover {
@@ -108,4 +109,9 @@
   text-align: center;
   margin-top: 10px;
   font-weight: 200;
+}
+
+.subtitle {
+  font-size: 12px !important;
+  line-height: 10px;
 }

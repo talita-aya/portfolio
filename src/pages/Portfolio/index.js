@@ -47,13 +47,15 @@ function Index() {
 
       <section className="projects">
         <div className="project-container">
-          <img src={UTask} alt="projeto" className="project-image"/>
+          <a target="_blank" href="https://github.com/talita-aya/uTask"><img src={UTask} alt="projeto" className="project-image"/></a>
           <p>UTask 2.0</p>
+          <p className="subtitle">- desenvolvimento -</p>
         </div>
 
         <div className="project-container">
-          <img src={PortfolioPage} alt="projeto" className="project-image"/>
+          <a target="_blank" href="https://github.com/talita-aya/portfolio"><img src={PortfolioPage} alt="projeto" className="project-image"/></a>
           <p>Meu Portfólio</p>
+          <p className="subtitle">- design & desenvolvimento -</p>
         </div>
       </section>
 
