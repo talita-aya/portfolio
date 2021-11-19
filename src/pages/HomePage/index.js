@@ -34,9 +34,11 @@ function Index(){
         </div>
       </section>
 
+      {/* 
       <section className="down">
-        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => navigate('/sobre')} />
       </section>
+      */}
 
     </div>
   );
