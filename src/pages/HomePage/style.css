@@ -1,5 +1,5 @@
 .container {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: #0E0D0B;
   color: #E0E0E0;
@@ -7,10 +7,10 @@
 
 .navbar {
   width: 100%;
-  position: fixed;
   top: 0;
   padding: 30px 15px 15px 60px;
   z-index: 10;
+  position: absolute;
 }
 
 .navbar {
