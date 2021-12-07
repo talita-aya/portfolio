@@ -25,11 +25,11 @@ function Index (){
         <img className="animate__animated animate__fadeIn" src={Sobre} alt="palavra background" />
       </section>
       
-      <section className="about-title-mim">
+      <section className="about-title-mim ">
         <img className="animate__animated animate__fadeIn" src={Mim} alt="palavra background" />
       </section>
      
-      <section className="about-me-text">
+      <section className="about-me-text animate__animated animate__fadeIn">
         <p>
           Olá,
           <br/>

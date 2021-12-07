@@ -7,6 +7,8 @@ import Meus from './../../assets/backgroundWords/meus.svg';
 import Projetos1 from './../../assets/backgroundWords/projetos1.svg';
 import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
 import DownArrow from './../../assets/down arrow.svg';
+import UTask from './../../assets/portfolio/utask.png';
+import PortfolioPage from './../../assets/portfolio/portfolio.png';
 
 
 function Index() {
@@ -40,8 +42,23 @@ function Index() {
       </section>
 
       <section className="portfolio-down">
-        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 800)} />
       </section>
+
+      <section className="projects">
+        <div className="project-container">
+          <a target="_blank" href="https://github.com/talita-aya/uTask"><img src={UTask} alt="projeto" className="project-image"/></a>
+          <p>UTask 2.0</p>
+          <p className="subtitle">- desenvolvimento -</p>
+        </div>
+
+        <div className="project-container">
+          <a target="_blank" href="https://github.com/talita-aya/portfolio"><img src={PortfolioPage} alt="projeto" className="project-image"/></a>
+          <p>Meu Portfólio</p>
+          <p className="subtitle">- design & desenvolvimento -</p>
+        </div>
+      </section>
+
     </div>
   );
 }
