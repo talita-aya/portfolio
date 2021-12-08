@@ -121,3 +121,20 @@
 .animate__animated.animate__fadeInDown {
   --animate-duration: 3s;
 }
+
+
+/* extra large devices */
+@media only screen and (min-width: 768px) {
+  .main-title {
+    text-align: center;
+  }
+}
+
+/* Móvel: 360 x 640
+Móvel: 375 x 667
+Móvel: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tabuleiro: 768 x 1024
+Portátil: 1366 x 768
+Laptop ou desktop de alta resolução: 1920 x 1080 */
