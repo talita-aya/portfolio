@@ -3,8 +3,8 @@ import { useNavigate } from "react-router";
 
 import "animate.css";
 import "./style.css";
-import Contato1 from './../../assets/versaoWeb/backgroundWords/contato1.svg';
-import Contato2 from './../../assets/versaoWeb/backgroundWords/contato2.svg';
+import Contato1 from './../../assets/backgroundWords/contato1.svg';
+import Contato2 from './../../assets/backgroundWords/contato2.svg';
 import Instagram from './../../assets/instagram.svg';
 import Email from './../../assets/email.svg';
 import Github from './../../assets/github.svg';

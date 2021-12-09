@@ -3,12 +3,12 @@ import { useNavigate } from "react-router";
 
 import "animate.css";
 import "./style.css";
-import Meus from './../../assets/versaoWeb/backgroundWords/meus.svg';
-import Projetos1 from './../../assets/versaoWeb/backgroundWords/projetos1.svg';
-import Projetos2 from './../../assets/versaoWeb/backgroundWords/projetos2.svg';
+import Meus from './../../assets/backgroundWords/meus.svg';
+import Projetos1 from './../../assets/backgroundWords/projetos1.svg';
+import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
 import DownArrow from './../../assets/down arrow.svg';
-import UTask from './../../assets/versaoWeb/portfolio/utask.png';
-import PortfolioPage from './../../assets/versaoWeb/portfolio/portfolio.png';
+import UTask from './../../assets/portfolio/utask.png';
+import PortfolioPage from './../../assets/portfolio/portfolio.png';
 
 
 function Index() {

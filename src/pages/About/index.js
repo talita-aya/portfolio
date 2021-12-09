@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router';
 
 import 'animate.css';
 import './style.css';
-import Sobre from './../../assets/versaoWeb/backgroundWords/sobre.svg';
-import Mim from './../../assets/versaoWeb/backgroundWords/mim.svg';
+import Sobre from './../../assets/backgroundWords/sobre.svg';
+import Mim from './../../assets/backgroundWords/mim.svg';
 
 
 function Index (){

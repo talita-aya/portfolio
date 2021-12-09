@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router';
 import './style.css';
 import 'animate.css';
 import HomeBackground from './../../assets/versaoWeb/background.png';
-import BackgroundName from './../../assets/versaoWeb/backgroundWords/talita.svg';
-import DownArrow from './../../assets/down arrow.svg';
+import BackgroundName from './../../assets/backgroundWords/talita.svg';
 
 
 function Index(){
