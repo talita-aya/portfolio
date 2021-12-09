@@ -22,14 +22,14 @@ function Index(){
       </header>
 
       <section className="image">
-        <img src={HomeBackground} alt="background da home page" />
+        <img className="background" src={HomeBackground} alt="background da home page" />
         <div className="shadow-image"></div>
       </section>
 
       <section className="title">
         <h1 className="main-title animate__animated animate__fadeIn">TALITA AYA</h1>
         <div className="image">
-          <img className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
+          <img id="name" className="animate__animated animate__fadeIn" src={BackgroundName} alt="nome background" />
         </div>
       </section>
 
