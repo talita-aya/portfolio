@@ -115,3 +115,19 @@
   font-size: 12px !important;
   line-height: 10px;
 }
+
+@media only screen and (max-width: 820px) {
+  .portfolio-title-meus img {
+    width: 60%;
+    margin-top: 200px;
+  }
+
+  .portfolio-title-projetos img {
+    width: 80%;
+  }
+
+  .portfolio-title-projetos2 img {
+    width: 45%;
+    margin-bottom: 120px;
+  }
+}

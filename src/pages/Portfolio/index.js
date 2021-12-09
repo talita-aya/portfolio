@@ -42,7 +42,7 @@ function Index() {
       </section>
 
       <section className="portfolio-down">
-        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 800)} />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 1100)} />
       </section>
 
       <section className="projects">
