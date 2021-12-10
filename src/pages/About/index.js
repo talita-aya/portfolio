@@ -16,7 +16,7 @@ function Index (){
         <ul>
           <li onClick={() => navigate('/')}>Home</li>
           <li className="enabled">Sobre</li>
-          <li onClick={() => navigate('/portfolio')}>Portfólio</li>
+          <li onClick={() => navigate('/projetos')}>Portfólio</li>
           <li onClick={() => navigate('/contato')}>Contato</li>
         </ul>
       </header>

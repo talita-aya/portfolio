@@ -11,7 +11,7 @@ function routes() {
     <Routes>
       <Route exact path='/' element={<Home/>} />
       <Route exact path='/sobre' element={<About/>} />
-      <Route exact path='/portfolio' element={<Portfolio/>} />
+      <Route exact path='/projetos' element={<Portfolio/>} />
       <Route exact path='/contato' element={<Contact/>} />
     </Routes>
   );

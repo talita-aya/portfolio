@@ -18,7 +18,7 @@ function Index() {
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/sobre")}>Sobre</li>
-          <li onClick={() => navigate("/portfolio")}>Portfólio</li>
+          <li onClick={() => navigate("/projetos")}>Portfólio</li>
           <li className="enabled">Contato</li>
         </ul>
       </header>
