@@ -11,10 +11,6 @@
   padding: 30px 15px 15px 60px;
   z-index: 10;
   position: absolute;
-}
-
-.navbar {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,9 +140,28 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) { 
   .navbar {
-    display: none;
+    padding: 5px 10px 10px 20px;
+    font-size: 12px;
+  }
+
+  .navbar ul li {
+    margin: 0 8px;
+    padding: 8px 10px;
+  }
+
+  .navbar ul li:hover {
+    color: #2F2F2F;
+    background-color: #e0e0e091;
+    border-radius: 30px;
+  }
+
+  .enabled {
+    background-color: #2F2F2F;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
   }
 
   .main-title {
