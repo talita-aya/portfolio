@@ -22,7 +22,7 @@ function Index(){
       </header>
 
       <section className="image">
-        <img src={HomeBackground} alt="background da home page" />
+        <img className="background" src={HomeBackground} alt="background da home page" />
         <div className="shadow-image"></div>
       </section>
 

@@ -68,3 +68,62 @@
   border: #e0e0e091;
   color: #fff;
 }
+
+@media only screen and (max-width: 820px) {
+  .about-title-sobre img {
+    width: 70%;
+    padding-top: 150px;
+  }
+
+  .about-title-mim img {
+    width: 45%;
+    padding-bottom: 100px;
+  }
+
+  .about-me-text {
+    text-align: center;
+    margin-left: 250px;
+  }
+
+  .call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    height: 95%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .about-title-sobre img {
+    width: 80%;
+    padding-top: 30px;
+  }
+
+  .about-title-mim img {
+    width: 50%;
+    padding-bottom: 80px;
+  }
+
+  .about-me-text {
+    text-align: center;
+    margin-left: 80px;
+    width: 60%;
+  }
+  
+  .about-me-text p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  
+  .call-to-action {
+    height: 80%;
+    padding-top: 320px;
+  }
+  
+  .call-to-action input {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+}

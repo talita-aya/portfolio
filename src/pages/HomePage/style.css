@@ -123,12 +123,47 @@
 }
 
 
-/* extra large devices */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 820px) {
+  .navbar {
+    margin-top: 30px;
+  }
+
   .main-title {
     text-align: center;
+    font-size: 100px;
+    line-height: 120px;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .image img {
+    background-image: url('./../../assets/versaoTablet/background.png');
+    background-size: cover;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 30px !important;
+    letter-spacing: 15px;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .image img {
+    background-image: url('./../../assets/versaoMobile/background.png');
+    background-size: cover;
+  }
+}
+
 
 /* Móvel: 360 x 640
 Móvel: 375 x 667
