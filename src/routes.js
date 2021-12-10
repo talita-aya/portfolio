@@ -9,7 +9,7 @@ import Contact from './pages/Contact/index';
 function routes() {
   return (
     <Routes>
-      <Route exact path='/' element={<Home/>} />
+      <Route exact path='/portfolio' element={<Home/>} />
       <Route exact path='/sobre' element={<About/>} />
       <Route exact path='/projetos' element={<Portfolio/>} />
       <Route exact path='/contato' element={<Contact/>} />
