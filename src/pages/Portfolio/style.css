@@ -130,4 +130,34 @@
     width: 45%;
     margin-bottom: 120px;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 110vh;
+    background-color: #0E0D0B;
+    margin-top: -90px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 30px;
+    padding-top: 100px;
+    align-items: center;
+  }
+
+  .project-container:nth-child(1) {
+    padding-top: 220px;
+  }
+  
+  .project-container p {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 15px !important;
+  }
 }
