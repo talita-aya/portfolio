@@ -161,3 +161,58 @@
     font-size: 15px !important;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .portfolio-title-meus img {
+    margin-top: 160px;
+    width: 65%;
+  }
+
+  .portfolio-title-projetos img {
+    width: 85%;
+    margin-top: 50px;
+  }
+
+  
+  .portfolio-title-projetos2 {
+    margin-top: -20px;
+  }
+
+  .portfolio-title-projetos2 img {
+    width: 45%;
+  }
+
+  .portfolio-title {
+    width: 90%;
+    font-size: 40px;
+    margin-left: 25px;
+  }
+  
+  .portfolio-down img {
+    width: 40px !important;
+  }
+
+  .portfolio-down img:hover {
+    width: 43px;
+  }
+
+  .project-container {
+    width: 80%;
+    margin-left: 7px;
+    padding-top: 80px;
+  }
+
+  .project-container:nth-child(1) {
+    padding-top: 170px;
+  }
+  
+  .project-container p {
+    font-size: 15px;
+    margin-left: 60px;
+  }
+  
+  .subtitle {
+    font-size: 12px !important;
+    line-height: 5px;
+  }
+}
