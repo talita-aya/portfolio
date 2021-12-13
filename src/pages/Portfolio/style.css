@@ -116,7 +116,7 @@
   line-height: 10px;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
   .portfolio-title-meus img {
     width: 60%;
     margin-top: 200px;
@@ -162,7 +162,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .portfolio-title-meus img {
     margin-top: 160px;
     width: 65%;

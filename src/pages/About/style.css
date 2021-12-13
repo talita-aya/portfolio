@@ -69,7 +69,7 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
   .about-title-sobre img {
     width: 70%;
     padding-top: 150px;
@@ -94,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
   .about-title-sobre img {
     width: 80%;
