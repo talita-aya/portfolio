@@ -9,6 +9,7 @@ import Projetos2 from './../../assets/backgroundWords/projetos2.svg';
 import DownArrow from './../../assets/down arrow.svg';
 import UTask from './../../assets/portfolio/utask.png';
 import PortfolioPage from './../../assets/portfolio/portfolio.png';
+import WeatherApp from './../../assets/portfolio/weather app.png';
 
 
 function Index() {
@@ -42,7 +43,7 @@ function Index() {
       </section>
 
       <section className="portfolio-down">
-        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 1100)} />
+        <img className="animate__animated animate__fadeInDown" src={DownArrow} alt="seta para baixo" onClick={() => window.scrollTo(300, 700)} />
       </section>
 
       <section className="projects">
@@ -56,6 +57,12 @@ function Index() {
           <a target="_blank" href="https://github.com/talita-aya/portfolio"><img src={PortfolioPage} alt="projeto" className="project-image"/></a>
           <p>Meu Portfólio</p>
           <p className="subtitle">- design & desenvolvimento -</p>
+        </div>
+
+        <div className="project-container">
+          <a target="_blank" href="https://www.figma.com/file/jaJ5z7E5s1PhdcbgKIVrSB/weather-app"><img src={WeatherApp} alt="projeto" className="project-image"/></a>
+          <p>Weather App</p>
+          <p className="subtitle">- design -</p>
         </div>
       </section>
 
