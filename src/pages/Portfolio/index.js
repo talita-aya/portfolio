@@ -10,6 +10,7 @@ import DownArrow from './../../assets/down arrow.svg';
 import UTask from './../../assets/portfolio/utask.png';
 import PortfolioPage from './../../assets/portfolio/portfolio.png';
 import WeatherApp from './../../assets/portfolio/weather app.png';
+import Uikyo from './../../assets/portfolio/uikyo.png';
 
 
 function Index() {
@@ -62,6 +63,12 @@ function Index() {
         <div className="project-container">
           <a target="_blank" href="https://www.figma.com/file/jaJ5z7E5s1PhdcbgKIVrSB/weather-app"><img src={WeatherApp} alt="projeto" className="project-image"/></a>
           <p>Weather App</p>
+          <p className="subtitle">- design -</p>
+        </div>
+
+        <div className="project-container">
+          <a target="_blank" href="https://www.figma.com/file/VCBraJHnHK03UZlzdhhOnp/uikyo?node-id=2%3A146"><img src={Uikyo} alt="projeto" className="project-image"/></a>
+          <p>Uikyo</p>
           <p className="subtitle">- design -</p>
         </div>
       </section>
