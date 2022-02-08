@@ -71,6 +71,7 @@ function Index() {
           <p>Uikyo</p>
           <p className="subtitle">- design -</p>
         </div>
+        
       </section>
 
     </div>
