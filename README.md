@@ -25,8 +25,8 @@ Foram criadas 4 diferentes páginas para melhor organização:
 <br/>
 
 > Anotações: ao adicionar um novo projeto, seguir os seguintes comandos: 
-`git add . ` 
-`git commit -m "message here"` 
-`run npm deploy` 
-`git push origin main`
+- `git add . ` 
+- `git commit -m "message here"` 
+- `run npm deploy` 
+- `git push origin main`
 
