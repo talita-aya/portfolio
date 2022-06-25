@@ -11,7 +11,7 @@ import UTask from './../../assets/portfolio/utask.png';
 import PortfolioPage from './../../assets/portfolio/portfolio.png';
 import WeatherApp from './../../assets/portfolio/weather app.png';
 import Uikyo from './../../assets/portfolio/uikyo.png';
-
+import LemonPie from './../../assets/portfolio/lemon pie.png';
 
 function Index() {
   const navigate = useNavigate();
@@ -70,6 +70,12 @@ function Index() {
           <a target="_blank" href="https://www.figma.com/file/VCBraJHnHK03UZlzdhhOnp/uikyo?node-id=2%3A146"><img src={Uikyo} alt="projeto" className="project-image"/></a>
           <p>Uikyo</p>
           <p className="subtitle">- design -</p>
+        </div>
+
+        <div className="project-container">
+          <a target="_blank" href="https://github.com/talita-aya/lemon-pie.git"><img src={LemonPie} alt="projeto" className="project-image"/></a>
+          <p>Lemon Pie</p>
+          <p className="subtitle">- design & desenvolvimento -</p>
         </div>
         
       </section>
