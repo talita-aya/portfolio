@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a77fc35b.chunk.css",
-    "main.js": "/portfolio/static/js/main.5ffa0e7e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5ffa0e7e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f0c74eaf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f0c74eaf.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
     "static/css/2.a1596f27.chunk.css": "/portfolio/static/css/2.a1596f27.chunk.css",
@@ -20,6 +20,7 @@
     "static/media/email.113f94d8.svg": "/portfolio/static/media/email.113f94d8.svg",
     "static/media/github.cec5fd47.svg": "/portfolio/static/media/github.cec5fd47.svg",
     "static/media/instagram.e8a8db1a.svg": "/portfolio/static/media/instagram.e8a8db1a.svg",
+    "static/media/lemon pie.e94d2fb5.png": "/portfolio/static/media/lemon pie.e94d2fb5.png",
     "static/media/linkedin.fcd79589.svg": "/portfolio/static/media/linkedin.fcd79589.svg",
     "static/media/meus.660ce217.svg": "/portfolio/static/media/meus.660ce217.svg",
     "static/media/mim.7f271261.svg": "/portfolio/static/media/mim.7f271261.svg",
@@ -37,6 +38,6 @@
     "static/css/2.a1596f27.chunk.css",
     "static/js/2.2fed1711.chunk.js",
     "static/css/main.a77fc35b.chunk.css",
-    "static/js/main.5ffa0e7e.chunk.js"
+    "static/js/main.f0c74eaf.chunk.js"
   ]
 }
