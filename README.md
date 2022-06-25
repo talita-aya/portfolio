@@ -22,3 +22,11 @@ Foram criadas 4 diferentes páginas para melhor organização:
 3. **Portfólio:** onde estão e serão armazenados os projetos escolhidos
 4. **Contato:** plataformas para que consigam me contatar
 
+<br/>
+
+> Anotações: ao adicionar um novo projeto, seguir os seguintes comandos: 
+`git add . ` 
+`git commit -m "message here"` 
+`run npm deploy` 
+`git push origin main`
+
