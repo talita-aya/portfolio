@@ -7,9 +7,11 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
 }
 
 .container {
+  display: flex;
   background-color: transparent;
   width: 100%;
   padding: 0 10%;
@@ -44,19 +46,19 @@
   color: #404040;
 }
 
-.banner img {
+.banner {
   width: 100%;
-  position: absolute;
+  height: 100vh;
+  background: url(assets/banner/banner-background.svg);
   top: 0;
-  z-index: 5;
 }
 
 .banner h1 {
   width: 80%;
   height: 100%;
   overflow: hidden;
-  z-index: 6;
   position: absolute;
+  top: 0;
   font-family: 'Prata', serif;
   display: flex;
   align-items: center;
@@ -66,4 +68,75 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:#404040;
   -webkit-text-fill-color: transparent;
+}
+
+.sobre-mim {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.sobre-mim-img img {
+  width: 100%;
+}
+
+.sobre-mim-texto {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sobre-mim-texto h2 {
+  font-family: 'Prata';
+  font-size: 65px;
+  width: 100%;
+  color: #404040;
+  margin-left: -70px;
+}
+
+.sobre-mim-texto-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 86px;
+  color: #E4E4E4;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.botao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76px;
+}
+
+.botao button {
+  padding: 10px 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #E4E4E4;
+  border: 1px solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #fff, 
+      #404040
+    ) 1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.botao button:hover {
+  opacity: 60%;
+  background: linear-gradient(#fff, #404040);
+  color: #404040;
+  font-weight: 400;
 }
