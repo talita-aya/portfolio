@@ -12,7 +12,7 @@
 .container {
   background-color: transparent;
   width: 100%;
-  padding: 0 109px;
+  padding: 0 10%;
 }
 
 .navbar {
@@ -22,6 +22,7 @@
   align-items: center;
   background-color: #000000a6;
   position: fixed;
+  z-index: 10;
 }
 
 .navbar ul {
@@ -41,4 +42,28 @@
 
 .navbar ul li a:hover {
   color: #404040;
+}
+
+.banner img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.banner h1 {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 6;
+  position: absolute;
+  font-family: 'Prata', serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 110px;
+  font-weight: lighter;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:#404040;
+  -webkit-text-fill-color: transparent;
 }
