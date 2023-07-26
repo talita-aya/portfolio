@@ -71,7 +71,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.sobre-mim {
+.sobre-mim, .portfolio {
   background-color: #000;
   width: 100%;
   height: 100%;
@@ -166,3 +166,75 @@
 .stack img:hover {
   opacity: 100%;
 }
+
+.portfolio h2 {
+  font-family: 'Prata';
+  font-size: 65px;
+  width: 100%;
+  color: #404040;
+}
+
+.categorias {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 63px;
+}
+
+.categorias ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.categorias ul li button {
+  width: 230px;
+  padding: 8px 41px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #E4E4E4;
+  border: 1px solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #fff, 
+      #404040
+    ) 1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.categorias ul li button:hover {
+  opacity: 60%;
+  background: linear-gradient(#fff, #404040);
+  color: #404040;
+  font-weight: 400;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 63px;
+}
+
+.carousel-wrapper .carousel {
+  white-space: nowrap;
+  cursor: pointer;
+  width: 80%;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: calc(100% / 3);
+  margin-left: 14px;
+}
+
+/* @media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+} */
