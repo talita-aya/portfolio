@@ -251,31 +251,12 @@
   opacity: 70%;
 }
 
+
 @media screen and (max-width: 1600px) {
   .container {
     width: 100%;
   }
 }
-
-/* .carousel-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 63px;
-}
-
-.carousel-wrapper .carousel {
-  white-space: nowrap;
-  cursor: pointer;
-  width: 80%;
-  overflow: hidden;
-}
-
-.carousel img {
-  width: calc(100% / 3);
-  margin-left: 14px;
-} */
 
 .contato h2 {
   font-family: 'Prata';
