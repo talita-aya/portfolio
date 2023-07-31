@@ -213,7 +213,51 @@
   font-weight: 400;
 }
 
-.carousel-wrapper {
+.slider {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 63px;
+}
+
+.carousel-container {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subcontainer {
+  width: 80%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: 0.5s;
+}
+
+.slide-img img {
+  width: 95%;
+}
+
+.slide-img:hover {
+  opacity: 70%;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* .carousel-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
@@ -231,7 +275,7 @@
 .carousel img {
   width: calc(100% / 3);
   margin-left: 14px;
-}
+} */
 
 .contato h2 {
   font-family: 'Prata';
