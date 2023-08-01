@@ -11,6 +11,17 @@ let slider = tns({
   "swipeAngle": false,
   "speed": 400,
   "mouseDrag": true,
+  responsive: {
+    360: {
+      items: 1
+    },
+    400: {
+      items: 2
+    },
+    900: {
+      items: 3
+    }
+  },
 });
 
 
