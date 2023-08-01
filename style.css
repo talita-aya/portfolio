@@ -274,9 +274,16 @@
   padding: 80px 0 45px 0;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
 
-/* @media screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
-} */
+body::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #404040;  
+  border-radius: 20px;       
+  border: 2px solid #404040;  
+}
