@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap");
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   border: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 32px;
@@ -35,12 +35,12 @@ header ul {
 }
 
 header ul li a {
-  color: #E4E4E4;
+  color: #e4e4e4;
   width: 100%;
 }
 
 header ul li a:hover {
-  color: #A6A5FF;
+  color: #a6a5ff;
 }
 
 .banner-container {
@@ -52,7 +52,7 @@ header ul li a:hover {
 .title {
   width: 100%;
   height: 100%;
-  color: #E4E4E4;
+  color: #e4e4e4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@ header ul li a:hover {
 }
 
 .title h1 {
-  font-family: 'Noto Serif Korean';
+  font-family: "Noto Serif Korean";
   font-weight: 400;
   font-size: 100px;
   line-height: 160px;
@@ -69,7 +69,7 @@ header ul li a:hover {
 }
 
 .title p {
-  font-family: 'Reenie Beanie';
+  font-family: "Reenie Beanie";
   font-weight: 500;
   font-size: 48px;
   line-height: 48px;
@@ -79,7 +79,7 @@ header ul li a:hover {
 }
 
 .banner-img {
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -95,7 +95,7 @@ header ul li a:hover {
   background-color: #080808;
   width: 100%;
   gap: 4rem;
-  padding: 10% 8%;
+  padding: 8%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -119,22 +119,23 @@ header ul li a:hover {
   gap: 1rem;
 }
 
-.title-sobre-mim div h1, .title-sobre-mim h1 {
-  font-family: 'Noto Serif Korean';
+.title-sobre-mim div h1,
+.title-sobre-mim h1 {
+  font-family: "Noto Serif Korean";
   font-size: 60px;
-  color: #E4E4E4;
+  color: #e4e4e4;
   font-weight: 400;
   line-height: 68px;
 }
 
 .title-sobre-mim .title-reenie-beanie.angled {
-  font-family: 'Reenie Beanie';
-  color: #A6A5FF;
+  font-family: "Reenie Beanie";
+  color: #a6a5ff;
   transform: rotate(90deg);
 }
 
 .text-sobre-mim {
-  color: #E4E4E4;
+  color: #e4e4e4;
 }
 
 .img-sobre-mim-container {
@@ -142,7 +143,6 @@ header ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .img-sobre-mim-container img {
@@ -153,7 +153,7 @@ header ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  color: #E4E4E4;
+  color: #e4e4e4;
 }
 
 .formacao-academica .subtitle {
@@ -163,23 +163,23 @@ header ul li a:hover {
 }
 
 .formacao-academica .subtitle h2 {
-  font-family: 'Noto Serif Korean';
+  font-family: "Noto Serif Korean";
   font-size: 35px;
   line-height: 46px;
   font-weight: 400;
 }
 
 .formacao-academica .subtitle .subtitle-reenie-beanie {
-  font-family: 'Reenie Beanie';
+  font-family: "Reenie Beanie";
   font-size: 30px;
-  color: #A6A5FF;
+  color: #a6a5ff;
   transform: rotate(-6deg);
 }
 
 .formacao-academica .subtitle .subtitle-reenie-beanie.opposite {
-  font-family: 'Reenie Beanie';
+  font-family: "Reenie Beanie";
   font-size: 30px;
-  color: #A6A5FF;
+  color: #a6a5ff;
   transform: rotate(4deg);
 }
 
@@ -217,8 +217,8 @@ header ul li a:hover {
 }
 
 .stack-item p {
-  color: #A6A5FF;
-  font-family: 'Reenie Beanie';
+  color: #a6a5ff;
+  font-family: "Reenie Beanie";
   font-size: 28px;
   font-weight: 500;
   text-align: center;
@@ -227,4 +227,82 @@ header ul li a:hover {
   display: flex;
   align-items: top;
   justify-content: center;
+}
+
+.projetos-container {
+  background-color: #080808;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projetos-container h1 {
+  color: #e4e4e4;
+  font-family: "Noto Serif Korean";
+  font-size: 60px;
+}
+
+.projetos-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.projetos-item {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  height: 35rem;
+}
+
+.projetos-item.top {
+  align-items: start;
+}
+
+.projetos-item.bottom {
+  align-items: end;
+}
+
+.projetos-gallery a img {
+  height: 30rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container a {
+  width: 30%;
+}
+
+.button-container button {
+  background-color: #080808;
+  cursor: pointer;
+  padding: 2% 8%;
+  width: 100%;
+  color: #e4e4e4;
+  border: 1px solid #e4e4e4;
+  border-radius: 1rem;
+}
+
+.button-container button:hover {
+  color: #a6a5ff;
+  border-color: #a6a5ff;
+}
+
+.note-reenie-beanie {
+  font-family: "Reenie Beanie";
+  font-size: 30px;
+  color: #a6a5ff;
+  transform: rotate(4deg);
+  text-align: end;
+  margin-top: -120px;
+  padding: 0 5%;
 }
