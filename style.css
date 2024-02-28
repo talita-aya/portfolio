@@ -7,8 +7,8 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 14px;
   line-height: 32px;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -89,4 +89,142 @@ header ul li a:hover {
 
 .banner-img img {
   height: 100%;
+}
+
+.sobre-mim-container {
+  background-color: #080808;
+  width: 100%;
+  gap: 4rem;
+  padding: 10% 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-sobre-mim-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 60%;
+}
+
+.title-sobre-mim {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.title-sobre-mim div {
+  display: flex;
+  gap: 1rem;
+}
+
+.title-sobre-mim div h1, .title-sobre-mim h1 {
+  font-family: 'Noto Serif Korean';
+  font-size: 60px;
+  color: #E4E4E4;
+  font-weight: 400;
+  line-height: 68px;
+}
+
+.title-sobre-mim .title-reenie-beanie.angled {
+  font-family: 'Reenie Beanie';
+  color: #A6A5FF;
+  transform: rotate(90deg);
+}
+
+.text-sobre-mim {
+  color: #E4E4E4;
+}
+
+.img-sobre-mim-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.img-sobre-mim-container img {
+  width: 90%;
+}
+
+.formacao-academica {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #E4E4E4;
+}
+
+.formacao-academica .subtitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formacao-academica .subtitle h2 {
+  font-family: 'Noto Serif Korean';
+  font-size: 35px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.formacao-academica .subtitle .subtitle-reenie-beanie {
+  font-family: 'Reenie Beanie';
+  font-size: 30px;
+  color: #A6A5FF;
+  transform: rotate(-6deg);
+}
+
+.formacao-academica .subtitle .subtitle-reenie-beanie.opposite {
+  font-family: 'Reenie Beanie';
+  font-size: 30px;
+  color: #A6A5FF;
+  transform: rotate(4deg);
+}
+
+.graduation-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  gap: 0.3rem;
+}
+
+.graduation-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.sobre-mim-stack {
+  background-color: #080808;
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stack-item img {
+  height: 4rem;
+}
+
+.stack-item p {
+  color: #A6A5FF;
+  font-family: 'Reenie Beanie';
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  align-items: top;
+  justify-content: center;
 }
