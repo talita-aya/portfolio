@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Redichart;
+  src: url('/assets/portfolio/red/Redichart-Regular-demo.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.project-page-container {
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  padding: 8% 0 4% 0;
+  gap: 4rem;
+}
+
+.project-page-container .title {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.project-page-container .title h1 {
+  font-family: 'Redichart';
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.project-page-container .title .redichart-red {
+  color: #A61A1F;
+}
+
+.layout-container {
+  display: flex;
+  width: 100%;
+}
+
+.layout-container.right {
+  justify-content: end;
+}
+
+.layout {
+  display: flex;
+  gap: 1rem;
+  height: 300px;
+}
+
+.project-page-container p {
+  color: #EAEAEA;
+  padding: 0 8%;
+  width: 80%;
+}
+
+.project-page-container .colors {
+  border: 2px dashed #E4E4E4;
+  margin: 0 8%;
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.project-page-container .colors svg:nth-child(3) {
+  margin-right: 4rem;
+}
+
+.project-page-container .colors svg {
+  height: 100px;
+}
+
+.project-page-container .tipography {
+  border: 2px dashed #E4E4E4;
+  margin: 0 8%;
+  padding: 3% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-page-container .tipography p {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.project-page-container .tipography .redichart-font {
+  font-family: 'Redichart';
+  font-size: 25px;
+}
+
+.inspirations {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.inspiration-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.inspiration-item img {
+  height: 600px;
+}
+
+.inspiration-item p {
+  font-family: 'Reenie Beanie';
+  color: #A6A5FF;
+  font-size: 22px;
+  text-align: center;
+}
+
+.project-page-container .design {
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-page-container .design img {
+  width: 100%;
+}
+
+.project-page-container p {
+  color: #818183;
+  font-size: 12px;
+}
+
+.project-page-container .creditos a {
+  margin: 0 8%;
+  display: flex;
+  color: #818183;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: underline;
+  width: fit-content;
+}
