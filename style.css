@@ -237,7 +237,7 @@ header ul li a:hover {
   gap: 4rem;
 }
 
-.projetos-container h1 {
+.projetos-container h1, .contato-container h1 {
   color: #e4e4e4;
   font-family: "Noto Serif Korean";
   font-size: 60px;
@@ -305,4 +305,38 @@ header ul li a:hover {
   text-align: end;
   margin-top: -120px;
   padding: 0 5%;
+}
+
+.note-reenie-beanie.contato {
+  color: #a6a5ff;
+  transform: rotate(-4deg);
+  position: absolute;
+  left: 8%;
+  padding-top: 12rem;
+}
+
+.contato-container {
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 8%;
+}
+
+.contato-container p {
+  color: #e4e4e4;
+  text-align: center;
+}
+
+.contato-container .contato-icons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contato-container .contato-icons a img:hover {
+  opacity: 0.8;
 }
