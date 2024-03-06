@@ -49,6 +49,11 @@
   width: 80%;
 }
 
+.project-page-container p b {
+  font-weight: bold;
+  color: #E4E4E4;
+}
+
 .project-page-container .colors {
   border: 2px dashed #E4E4E4;
   margin: 0 8%;
