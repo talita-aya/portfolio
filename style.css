@@ -339,3 +339,20 @@ header ul li a:hover {
 .contato-container .contato-icons a img:hover {
   opacity: 0.8;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(206, 206, 206);
+}
