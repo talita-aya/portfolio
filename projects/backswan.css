@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+.title.black-swan h1 {
+  font-family: 'Cormorant Upright';
+}
+
+.cinzel-blue {
+  font-family: 'Cinzel Decorative';
+  color: #5C73A2;
+}
+
+.youtube-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note.black-swan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 20%;
+}
+
+.note.black-swan p {
+  transform: rotate(-4deg);
+  color: #a6a5ff;
+  font-family: "Reenie Beanie";
+  font-size: 25px;
+  color: #a6a5ff;
+  width: 60%;
+  text-align: center;
+  margin-top: -16px;
+}
+
+.layout {
+  display: flex;
+  gap: 1rem;
+  height: 400px;
+}
+
+.gallery-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.gallery-layout img {
+  height: 450px;
+}
+
+.video-divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-divisor video {
+  width: 100%;
+}
+
+.colors.no-border.black-swan {
+  gap: 0;
+}
+
+.tipography.no-border.black-swan .cinzel-font {
+  font-family: 'Cinzel Decorative';
+}
+
+.tipography.no-border.black-swan .cormorant-font {
+  font-family: 'Cormorant Upright';
+}
+
+.tipography.no-border.black-swan p {
+  font-family: 'Barlow Condensed';
+}
