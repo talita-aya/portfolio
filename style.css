@@ -257,6 +257,10 @@ header ul li a:hover {
   height: 35rem;
 }
 
+.projetos-item:hover {
+  opacity: 0.5;
+}
+
 .projetos-item.top {
   align-items: start;
 }
