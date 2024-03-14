@@ -1,0 +1,50 @@
+.title.antic h1 {
+  font-family: 'Antic Didone';
+}
+
+.antic-title {
+  color: #8BB7B8;
+}
+
+.project-page-container .layout-container .layout.big {
+  width: 100%;
+  height: 100%;
+}
+
+.project-page-container .layout-container .layout.big img {
+  width: 80%;
+}
+
+.gallery-layout.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.colors.no-border {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.tipography.no-border {
+  border: none;
+}
+
+.tipography.no-border p {
+  font-family: 'Bellota Text';
+  font-size: 24px;
+}
+
+.tipography.no-border .antic-font {
+  font-family: 'Antic Didone';
+  font-size: 30px;
+}
+
+.design.small video {
+  width: 80%;
+}
