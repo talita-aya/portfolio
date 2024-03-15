@@ -110,7 +110,7 @@
   height: 600px;
 }
 
-.inspiration-item p {
+.inspiration-item p, .inspiration-p {
   font-family: 'Reenie Beanie';
   color: #A6A5FF;
   font-size: 24px;
