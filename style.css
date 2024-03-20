@@ -683,7 +683,7 @@ header ul li a:hover {
   width: 100%;
 }
 
-.colors.no-border.black-swan {
+.project-page-container .colors.no-border.black-swan {
   gap: 0;
 }
 
@@ -804,18 +804,22 @@ header ul li a:hover {
 }
 
 .project-page-container .tipography.no-border .poppins-font {
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
 }
 
 .project-page-container .tipography.no-border .poppins-font.md {
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
 .project-page-container .tipography.no-border .poppins-font.sb {
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
 .project-page-container .tipography.no-border .poppins-font.b {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -868,12 +872,12 @@ header ul li a:hover {
 .tipography.no-border.lato p {
   border: none;
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .tipography.no-border.lato .italiana-font {
   font-family: 'Italiana';
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .design.small video {
@@ -1002,6 +1006,7 @@ header ul li a:hover {
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  padding: 0 8%;
 }
 
 .tipography.no-border.bellota p {
