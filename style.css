@@ -918,3 +918,62 @@ header ul li a:hover {
   font-size: 24px;
   color: #A6A5FF;
 }
+
+/* SODA */
+.title.fredoka h1 {
+  font-family: 'Fredoka';
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fredoka-title {
+  color: #E4752D;
+}
+
+.gallery-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.reenie-note {
+  width: 100%;
+  transform: rotate(-4deg);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.reenie-note p {
+  font-family: 'Reenie Beanie';
+  font-size: 24px;
+  color: #A6A5FF;
+  text-align: end;
+}
+
+.colors.no-border.column {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.colors.no-border.column div {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tipography.no-border.soda p {
+  font-family: 'Urbanist';
+  font-size: 24px;
+}
+
+.tipography.no-border.soda .fredoka-font {
+  font-family: 'Fredoka';
+  font-weight: 600;
+  font-size: 30px;
+}
