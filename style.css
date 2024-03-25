@@ -1018,3 +1018,162 @@ header ul li a:hover {
   font-family: 'Antic Didone';
   font-size: 30px;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
+  .projetos-gallery a img {
+    height: 28rem;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1149px) {
+  .projetos-gallery a img {
+    height: 25rem;
+  }
+
+  .img-sobre-mim-container {
+    width: 35%;
+  }
+
+  .img-sobre-mim-container img {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .note-reenie-beanie {
+    margin-top: -140px;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .banner-img img {
+    width: 100%;
+  }
+
+  .sobre-mim-container {
+    flex-direction: column;
+  }
+
+  .text-sobre-mim-container {
+    width: 100%;
+  }
+
+  .img-sobre-mim-container {
+    display: none;
+  }
+
+  .sobre-mim-stack {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .stack-item {
+    padding: 2% 0;
+  }
+
+  .stack-item:last-child {
+    padding-bottom: 8%;
+  }
+
+  .projetos-gallery {
+    flex-wrap: wrap;
+  }
+
+  .projetos-item {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .note-reenie-beanie {
+    margin-top: -140px;
+    font-size: 24px;
+  }
+
+  .contato-container p {
+    width: 90%;
+  }
+
+  .contato-container .note-reenie-beanie.contato {
+    text-align: left;
+    margin-top: -100px;
+  }
+
+  .contato-icons img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header ul li:first-child {
+    display: none;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .title h1 {
+    font-size: 80px;
+  }
+
+  .title p {
+    font-size: 38px;
+  }
+
+  .projetos-container h1, .contato-container h1 {
+    padding: 8% 0;
+  }
+
+  .formacao-academica .subtitle img {
+    display: none;
+  }
+
+  .formacao-academica .subtitle .subtitle-reenie-beanie {
+    display: none;
+  }
+
+  .accordion {
+    flex-wrap: wrap;
+  }
+
+  .accordion-container .subtitle-reenie-beanie {
+    width: 100%;
+    text-align: end;
+  }
+
+  .note-reenie-beanie {
+    display: none;
+  }
+
+  .button-container a {
+    width: 100%;
+  }
+
+  .contato-container .contato-icons {
+    width: 100%;
+  }
+
+  .contato-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+  }
+
+  .projetos-title {
+    height: 250px;
+  }
+
+  .projetos-title .title-reenie-beanie {
+    font-size: 25px;
+  }
+
+  .projetos-gallery-container {
+    gap: 5%;
+  }
+}
