@@ -1157,7 +1157,7 @@ nav {
     height: 250px;
   }
 
-  .title.black-swan {
+  .title.black-swan, .title.lato, .title.poppins, .title.bebas, .title.antic, .project-page-container .title {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -1165,7 +1165,7 @@ nav {
     justify-content: center;
   }
 
-  .title.black-swan h1 {
+  .title.black-swan h1, .title.lato h1, .title.poppins h1, .title.bebas h1, .title.antic h1, .project-page-container .title h1 {
     font-size: 35px;
     line-height: 40px;
   }
@@ -1178,6 +1178,13 @@ nav {
     width: 100%;
   }
 
+  .layout-container.right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
   .layout.black-swan {
     height: 300px;
   }
@@ -1186,16 +1193,61 @@ nav {
     width: 250px;
     height: auto;
   }
+
+  .layout img {
+    height: 300px;
+  }
+
+  .layout.uikyo {
+    height: 500px;
+  }
+
+  .layout.uikyo img {
+    height: 500px;
+  }
+
+  .gallery-layout img {
+    width: 100%;
+  }
+
+  .project-page-container .colors.no-border, .project-page-container .colors.no-border.rounded {
+    gap: 2rem;
+  }
+  
+  .design-img img {
+    width: 80%;
+  }
+
+  .inspiration-item img {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 830px) {
-  .layout.black-swan {
+  .layout.black-swan, .layout img  {
     height: 230px;
   }
 
   .gallery-layout img {
     width: 200px;
     height: auto;
+  }
+
+  .gallery-layout.certificadora img {
+    width: 100%;
+  }
+
+  .project-page-container .colors.no-border.rounded, .project-page-container .colors {
+    gap: 0.5rem;
+  }
+
+  .gallery-img img {
+    height: 220px;
+  }
+
+  
+  .layout.uikyo, .layout.uikyo img {
+    height: 400px;
   }
 }
 
@@ -1303,7 +1355,7 @@ nav {
     gap: 5%;
   }
 
-  .layout-container {
+  .layout-container, .layout-container.right {
     display: none;
   }
 
@@ -1312,8 +1364,38 @@ nav {
     flex-direction: column;
   }
 
-  
   .button-container button {
     width: 70%;
+  }
+
+  .project-page-container .colors.no-border {
+    gap: 0.5rem;
+  }
+
+  .github {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .design.small.border video, .design.small video {
+    width: 100%;
+  }
+
+  .inspirations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inspiration-item img {
+    height: 400px;
+  }
+
+  .gallery-img {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .gallery-img img {
+    padding: 4%;
   }
 }
