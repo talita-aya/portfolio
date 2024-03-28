@@ -27,33 +27,56 @@
 }
 
 /* HEADER */
-header {
+.header {
+  position: fixed;
   background-color: #080808;
   width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: fixed;
   z-index: 100;
 }
 
-header ul {
+nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
   gap: 4rem;
   padding: 0 8%;
+  width: 50%;
 }
 
-header ul li a {
-  color: #e4e4e4;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-header ul li a:hover {
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-in-out;
+  color: #e4e4e4;
+}
+
+.menu a:hover {
+  opacity: 1;
   color: #a6a5ff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
 }
 
 /* BANNER PRINCIPAL */
@@ -103,6 +126,7 @@ header ul li a:hover {
 
 .banner-img img {
   height: 100%;
+  object-fit: cover;
 }
 
 /* SOBRE MIM */
@@ -1047,6 +1071,10 @@ header ul li a:hover {
 }
 
 @media screen and (max-width: 1099px) {
+  nav {
+    width: 60%;
+  }
+
   .banner-img img {
     width: 100%;
   }
@@ -1106,11 +1134,56 @@ header ul li a:hover {
   .contato-icons img {
     width: 80%;
   }
+
+  .projetos-title {
+    display: flex;
+    padding-top: 5rem;
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 640px) {
-  header ul li:first-child {
-    display: none;
+  nav {
+    align-items: center;
+    justify-content: end;
+  }
+
+  .menu {
+    flex-direction: column;
+    background-color: #080808fd;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu a {
+    margin-left: 50px;
+  }
+
+  .menu li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #535353;
+  }
+
+  .menu li:last-child {
+    border-bottom: 1px solid #535353;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #e4e4e4;
+    font-size: 28px;
+    cursor: pointer;
   }
 
   .banner-img {
@@ -1163,10 +1236,6 @@ header ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 8% 0;
-  }
-
-  .projetos-title {
-    height: 250px;
   }
 
   .projetos-title .title-reenie-beanie {
