@@ -277,7 +277,7 @@ nav {
 .sobre-mim-stack {
   background-color: #080808;
   width: 100%;
-  padding: 0 8%;
+  padding: 2% 8% 0 8%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -330,11 +330,31 @@ nav {
   gap: 2rem;
 }
 
+.projetos-item a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projetos-item a div {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5% 2%;
+  background: linear-gradient(90deg, #0b0b0b, #42416500,  #00000000);
+  width: 100%;
+  color: #e4e4e4;
+  font-size: 10px;
+}
+
+.projetos-item a div p {
+  font-size: 12px;
+}
+
 .projetos-item a img {
   width: 100%;
 }
 
-.projetos-item a img:hover {
+.projetos-item a:hover {
   opacity: .7;
 }
 
@@ -394,7 +414,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding: 8%;
+  padding: 4%;
 }
 
 .contato-container p {
@@ -445,7 +465,7 @@ nav {
 
 .projetos-title h1 {
   font-family: 'Noto Korean Serif';
-  font-size: 36px;
+  font-size: 50px;
   line-height: 60px;
   color: #e4e4e4;
 }
