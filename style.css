@@ -167,13 +167,12 @@ nav {
 
 .img-sobre-mim-container {
   width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 400px;
+  overflow: hidden;
 }
 
 .img-sobre-mim-container img {
-  width: 90%;
+  width: 100%;
 }
 
 .formacao-academica {
@@ -277,7 +276,7 @@ nav {
 .sobre-mim-stack {
   background-color: #080808;
   width: 100%;
-  padding: 2% 8% 0 8%;
+  padding: 2% 8% 4% 8%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -291,7 +290,7 @@ nav {
 }
 
 .stack-item img {
-  height: 4rem;
+  height: 3.5rem;
 }
 
 .stack-item p {
@@ -423,10 +422,14 @@ nav {
 }
 
 .contato-container .contato-icons {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.contato-container .contato-icons a img {
+  width: 80%;
 }
 
 .contato-container .contato-icons a img:hover {
