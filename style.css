@@ -496,6 +496,24 @@ nav {
   margin: 0 8%;
 }
 
+.projeto-page-text-reenie {
+  width: 100%;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20rem;
+}
+
+.projeto-page-text-reenie p {
+  font-family: "Reenie Beanie";
+  font-size: 24px;
+  color: #a6a5ff;
+  transform: rotate(-4deg);
+  width: 40%;
+  text-align: center;
+}
+
 .button-projeto-item {
   width: 20%;
   display: flex;
