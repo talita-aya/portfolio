@@ -298,6 +298,10 @@ nav {
   opacity: 0.8;
 }
 
+.projetos-item.hide {
+  visibility: hidden;
+}
+
 .button-container {
   display: flex;
   gap: 2rem;
