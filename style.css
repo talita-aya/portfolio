@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap");
+@import url(https://db.onlinewebfonts.com/c/5e605ff6994ce0e533aaf6cd51c6a33f?family=Pecita);
+
+@font-face {
+  font-family: "Pecita";
+  src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot");
+  src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.svg#Pecita")
+      format("svg");
+}
 
 * {
   margin: 0;
@@ -8,758 +24,218 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 16px;
   scroll-behavior: smooth;
   text-decoration: none;
+  color: black;
+  background-color: #F1EEE5;
 }
 
-/* HEADER */
-.header {
-  position: fixed;
-  background-color: #080808;
-  width: 100%;
-  height: 4.5rem;
+body {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 100;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  padding: 0 8%;
-  width: 50%;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.menu a {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.2s all ease-in-out;
-  color: #e4e4e4;
 }
 
-.menu a:hover {
-  opacity: 1;
-  color: #a6a5ff;
+.container {
+  width: 90%;
 }
 
-.menu-icon {
-  display: none;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked ~ .menu {
-  transform: scale(1, 1);
-}
-
-/* BANNER PRINCIPAL */
-.banner-container {
-  background-color: #080808;
+.banner {
   width: 100%;
   height: 100vh;
-}
-
-.title {
-  width: 100%;
-  height: 100%;
-  color: #e4e4e4;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.title h1 {
-  font-family: "Noto Serif Korean";
-  font-weight: 400;
-  font-size: 90px;
-  line-height: 120px;
-  text-align: center;
-  z-index: 1;
-}
-
-.title p {
-  font-family: "Reenie Beanie";
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: end;
-  width: 40%;
-  z-index: 1;
-}
-
-.banner-img {
-  background-color: #0a0a0a;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-}
-
-.banner-img img {
-  height: 100%;
-  object-fit: cover;
-}
-
-/* SOBRE MIM */
-.sobre-mim-container {
-  background-color: #080808;
-  width: 100%;
-  gap: 4rem;
-  padding: 8%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.text-sobre-mim-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 60%;
-}
-
-.title-sobre-mim {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-}
-
-.title-sobre-mim div {
-  display: flex;
-  gap: 1rem;
-}
-
-.title-sobre-mim div h1,
-.title-sobre-mim h1 {
-  font-family: "Noto Serif Korean";
-  font-size: 56px;
-  color: #e4e4e4;
-  font-weight: 400;
-  line-height: 68px;
-}
-
-.title-sobre-mim .title-reenie-beanie.angled {
-  font-family: "Reenie Beanie";
-  color: #a6a5ff;
-  transform: rotate(90deg);
-}
-
-.text-sobre-mim p {
-  color: #e4e4e4;
-  line-height: 36px;
-}
-
-.button-linkedin {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-linkedin button {
-  background-color: #080808;
-  cursor: pointer;
-  padding: 2% 8%;
-  width: 100%;
-  color: #e4e4e4;
-  border: 1px solid #e4e4e4;
-  border-radius: 1rem;
-}
-
-.button-linkedin button:hover {
-  color: #a6a5ff;
-  border-color: #a6a5ff;
-}
-
-.img-sobre-mim-container {
-  width: 40%;
-  height: 500px;
-  overflow: hidden;
-}
-
-.img-sobre-mim-container img {
-  width: 100%;
-}
-
-.sobre-mim-stack {
-  background-color: #080808;
-  width: 100%;
-  padding: 4% 8%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.stack-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.stack-item img {
-  height: 3.5rem;
-}
-
-.stack-item p {
-  color: #a6a5ff;
-  font-family: "Reenie Beanie";
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  width: 10rem;
-  height: 3rem;
-  display: flex;
-  align-items: top;
-  justify-content: center;
-}
-
-/* PROJETOS */
-.projetos-container {
-  background-color: #080808;
-  padding: 8%;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.projetos-container h1, .contato-container h1 {
-  color: #e4e4e4;
-  font-family: "Noto Serif Korean";
-  font-size: 56px;
-}
-
-.projetos-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.projetos-gallery-row {
-  width: 103%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.projetos-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projetos-item a {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.projetos-item a div {
-  position: absolute;
-  bottom: 0;
-  padding: 0.5% 2%;
-  background-color: #0b0b0be6;
-  width: 100%;
-  color: #e4e4e4;
-  font-size: 10px;
-}
-
-.projetos-item a div p {
-  font-size: 12px;
-}
-
-.projetos-item a img {
-  width: 100%;
-}
-
-.projetos-item a:hover {
-  opacity: 0.8;
-}
-
-.projetos-item.hide {
-  visibility: hidden;
-}
-
-.button-container {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-container a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  cursor: pointer;
-}
-
-.button-container button {
-  background-color: #080808;
-  cursor: pointer;
-  padding: 2% 8%;
-  width: 100%;
-  color: #e4e4e4;
-  border: 1px solid #e4e4e4;
-  border-radius: 1rem;
-}
-
-.button-container button:hover {
-  color: #a6a5ff;
-  border-color: #a6a5ff;
-}
-
-.note-reenie-beanie {
-  font-family: "Reenie Beanie";
-  font-size: 28px;
-  color: #a6a5ff;
-  transform: rotate(4deg);
-  text-align: end;
-  margin-top: -120px;
-}
-
-.note-reenie-beanie.contato {
-  color: #a6a5ff;
-  transform: rotate(-4deg);
-  position: absolute;
-  left: 8%;
-  padding-top: 12rem;
-}
-
-/* CONTATO */
-.contato-container {
-  background-color: #080808;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  padding: 4%;
-}
-
-.contato-container p {
-  color: #e4e4e4;
-  text-align: center;
-}
-
-.contato-container .contato-icons {
-  width: 48%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contato-container .contato-icons a img {
-  width: 60%;
-}
-
-.contato-container .contato-icons a img:hover {
-  opacity: 0.8;
-}
-
-/* SCROLLBAR */
-::-webkit-scrollbar {
-  width: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background: #080808;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e4e4e4;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(206, 206, 206);
-}
-
-/* TELA 'VER MAIS PROJETOS' */
-.projetos-title {
-  background-color: #080808;
-  width: 100%;
-  height: 300px;
-  padding: 0 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.projetos-title h1 {
-  font-family: 'Noto Korean Serif';
-  font-size: 48px;
-  line-height: 60px;
-  color: #e4e4e4;
-}
-
-.projetos-title .title-reenie-beanie {
-  width: 70%;
-  font-family: "Reenie Beanie";
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 48px;
-  text-align: end;
-  color: #a6a5ff;
-}
-
-.projetos-gallery-container {
-  background-color:#080808;
-  padding: 4% 8%;
-  padding-top: 0%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.projetos-gallery-container a img {
-  width: 100%;
-}
-
-.projetos-gallery-container a:hover {
-  opacity: 0.8;
-}
-
-
-/* PÁGINA ESPECÍFICA DE CADA PROJETO */
-.projeto-page-box {
-  background-color: #080808;
-  padding: 8% 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-}
-
-.projeto-page-box h1 {
-  color: #e4e4e4;
-  font-family: "Noto Serif Korean";
-  font-size: 48px;
-  line-height: 70px;
-  text-align: center;
-}
-
-.projeto-page-img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.projeto-page-img.left {
-  justify-content: left;
-}
-
-.projeto-page-img.right {
+  align-items: end;
   justify-content: right;
+  padding: 80px 0;
 }
 
-.projeto-page-img.center {
+.banner .title {
+  flex-direction: column;
+  display: flex;
+  align-items: end;
   justify-content: center;
 }
 
-.projeto-page-img img {
-  height: 300px;
+.banner .title h1 {
+  font-family: "Six Caps";
+  font-size: 140px;
 }
 
-.projeto-page-img.mobile img {
-  height: 420px;
+.banner .title p {
+  font-family: "Pecita";
+  font-size: 32px;
 }
 
-.projeto-page-text {
-  width: 52%;
-  color: #e4e4e4;
-  margin: 0 8%;
-}
-
-.projeto-page-text-reenie {
+.about-me {
   width: 100%;
-  margin-top: -30px;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: end;
-  margin-right: 20rem;
+  justify-content: center;
+  gap: 40px;
 }
 
-.projeto-page-text-reenie p {
-  font-family: "Reenie Beanie";
-  font-size: 24px;
-  color: #a6a5ff;
-  transform: rotate(-4deg);
-  width: 40%;
+.about-me .content {
+  width: 635px;
+  max-width: 635px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-me .content h2 {
+  font-family: "Pecita";
+  font-size: 40px;
+}
+
+.about-me .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-me .content .text p {
   text-align: center;
+  line-height: 28px;
 }
 
-.button-box {
+.about-me .buttons {
   display: flex;
+  width: 55%;
   align-items: center;
-  gap: 20px;
-  width: 62%;
-  margin-bottom: -20px;
+  justify-content: center;
+  gap: 32px;
 }
 
-.button-projeto-item {
-  width: 25%;
+.about-me .buttons button {
+  font-family: "Pecita";
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.about-me .buttons button:hover {
+  transform: scale(1.1);
+}
+
+.about-me .buttons p {
+  font-family: "Pecita";
+  font-size: 40px;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects .title h2,
+.footer .text h2 {
+  font-family: "Six Caps";
+  font-size: 80px;
+  line-height: 88px;
+}
+
+.projects .title p,
+.footer .text p {
+  font-family: "Pecita";
+  font-size: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  padding: 80px 0;
+}
+
+.content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+
+.socials {
+  width: fit-content;
+  display: flex;
+  gap: 16px;
+}
+
+.socials a {
+  background-color: #50668b;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button-projeto-item button {
-  background-color: #080808;
   cursor: pointer;
-  padding: 2% 8%;
-  width: 100%;
-  color: #e4e4e4;
-  border: 1px solid #e4e4e4;
-  border-radius: 1rem;
+  transition: all 0.2s ease;
 }
 
-.button-projeto-item button:hover {
-  color: #a6a5ff;
-  border-color: #a6a5ff;
+.socials a:hover {
+  background-color: #3f506e;
+  transform: scale(1.1);
 }
 
-/* RESPONSIVIDADE */
-@media screen and (min-width: 1150px) and (max-width: 1250px) {
-  .projetos-gallery a img {
-    height: 28rem;
-  }
+.socials img {
+  background-color: transparent;
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1149px) {
-  .projetos-gallery a img {
-    height: 25rem;
-  }
-
-  .img-sobre-mim-container {
-    width: 35%;
-  }
-
-  .img-sobre-mim-container img {
-    height: fit-content;
-    width: 100%;
-  }
-
-  .note-reenie-beanie {
-    margin-top: -140px;
-  }
-}
-
-@media screen and (max-width: 1099px) {
-  nav {
-    width: 60%;
-  }
-
-  .banner-img img {
-    width: 100%;
-  }
-
-  .sobre-mim-container {
-    flex-direction: column;
-  }
-
-  .text-sobre-mim-container {
-    width: 100%;
-  }
-
-  .img-sobre-mim-container {
-    display: none;
-  }
-
-  .sobre-mim-stack {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-
-  .stack-item {
-    padding: 2% 0;
-  }
-
-  .stack-item:last-child {
-    padding-bottom: 8%;
-  }
-
-  .projetos-gallery {
-    flex-wrap: wrap;
-  }
-
-  .projetos-item {
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-  }
-
-  .note-reenie-beanie {
-    margin-top: -140px;
-    font-size: 24px;
-  }
-
-  .contato-container p {
-    width: 90%;
-  }
-
-  .contato-container .note-reenie-beanie.contato {
-    text-align: left;
-    margin-top: -100px;
-  }
-
-  .contato-icons img {
+@media screen and (min-width: 1800px) {
+  .container {
     width: 80%;
   }
+}
 
-  .projetos-title {
-    display: flex;
-    padding-top: 5rem;
-    height: 250px;
+@media screen and (max-width: 800px) {
+  .banner, .about-me, .projects, .footer {
+    padding: 80px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .title {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .banner .title h1 {
+    text-align: center;
+    line-height: 160px;
+  }
+
+  .about-me .content, .about-me .buttons {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 640px) {
-  nav {
-    align-items: center;
-    justify-content: end;
-  }
-
-  .menu {
+@media screen and (max-width: 625px) {
+  .about-me .buttons {
+    width: 100%;
     flex-direction: column;
-    background-color: #080808fd;
-    align-items: start;
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 0.3s ease-in-out;
+    gap: 16px;
   }
 
-  .menu a {
-    margin-left: 50px;
-  }
-
-  .menu li {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    padding: 10px;
-    border-top: 1px solid #535353;
-  }
-
-  .menu li:last-child {
-    border-bottom: 1px solid #535353;
-  }
-
-  .menu-icon {
-    display: block;
-    color: #e4e4e4;
-    font-size: 28px;
-    cursor: pointer;
-  }
-
-  .banner-img {
-    width: 100%;
-  }
-
-  .title h1 {
-    font-size: 80px;
-  }
-
-  .title p {
-    font-size: 38px;
-  }
-
-  .projetos-container h1, .contato-container h1 {
-    padding: 8% 0;
-  }
-
-  .formacao-academica .subtitle img {
+  .about-me .buttons p {
     display: none;
-  }
-
-  .formacao-academica .subtitle .subtitle-reenie-beanie {
-    display: none;
-  }
-
-  .accordion {
-    flex-wrap: wrap;
-  }
-
-  .accordion-container .subtitle-reenie-beanie {
-    width: 100%;
-    text-align: end;
-  }
-
-  .note-reenie-beanie {
-    display: none;
-  }
-
-  .button-container a {
-    width: 100%;
-  }
-
-  .contato-container .contato-icons {
-    width: 100%;
-  }
-
-  .contato-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8% 0;
-  }
-
-  .projetos-title .title-reenie-beanie {
-    font-size: 25px;
-  }
-
-  .projetos-gallery-container {
-    gap: 5%;
-  }
-
-  .layout-container, .layout-container.right {
-    display: none;
-  }
-
-  .gallery-layout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .button-container button {
-    width: 70%;
   }
 }
