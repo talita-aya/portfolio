@@ -6,95 +6,468 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cultura Viva</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/cultura-viva.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li><a href="">Início</a></li>
-        <li><a href="/portfolio/#sobre-mim">Sobre mim</a></li>
-        <li><a href="/portfolio/#projetos">Projetos</a></li>
-        <li><a href="/portfolio/#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="projeto-page-box">
-    <h1>Cultura Viva</h1>
-
-    <div class="projeto-page-img left">
-      <img src="assets/projeto-item/cultura-viva.png" alt="protótipo do projeto">
-      <img src="assets/projeto-item/cultura-viva2.png" alt="protótipo do projeto">
+  <div class="cultura-viva-container">
+    <div class="banner">
+      <h1>CULTURA VIVA</h1>
     </div>
-
-    <div class="projeto-page-text">
+    <div class="note">
+      <div>
+        <p>“É como abrir uma porta para um museu online, sempre há algo interessante para descobrir”</p>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="text-margin">
+        <p>Minha primeira vez aplicando o Design Thinking <i>(em 85 dias)</i></p>
+      </div>
+      <div class="text">
+        <h3>Introdução</h3>
+        <p>O projeto Cultura Viva surgiu de um grande problema que observei durante minha rotina: <b>falta de acesso à
+            informações relacionadas a eventos artísticos</b>.
+        </p>
+        <p>
+          Durante toda minha vida, sempre apreciei um bom passeio para conhecer arte. Algo que parece, relativamente,
+          simples. O problema foi que cresci em uma pequena cidade onde não existem museus (até onde eu sei), mas ao me
+          mudar para o chamado “interior premium” para começar minha graduação, vi ali uma oportunidade de mudar isso.
+          Entretanto, não achei que seria tão difícil encontrar informações sobre determinados locais, eventos, oficinas
+          ou exposições na internet.
+        </p>
+        <p>
+          Assim, durante o final do meu semestre da universidade, onde tive muito tempo livre para conhecer os tais
+          “locais artísticos”, <b>não fiz nada porque não achei nada</b>. Aceitei que o “interior premium” não tinha
+          nada
+          a me
+          oferecer também, mas a grande reviravolta foi quando amigos começaram a falar de coisas que eles faziam no
+          tempo
+          livre e eu não fazia ideia que existiam: oficina de ecobags sustentáveis, criação de bichinhos de pelúcia com
+          materiais recicláveis, feirinhas de exposição de trabalhos de artistas locais, entre muitos outros.
+        </p>
+        <p>
+          <b>Foi então que percebi que talvez o problema não fosse a falta de opções, talvez ninguém soubesse que isso
+            existe na cidade também.</b>
+        </p>
+      </div>
+    </div>
+    <div class="problem">
+      <div class="img">
+        <img src="assets/projetos/cultura-viva/problema.png"
+          alt="foto em preto em branco de um homem e uma mulher observando quadros em uma exposição">
+      </div>
+      <div class="text">
+        <h3>Evidências do problema</h3>
+        <p>
+          Por muito tempo acreditei que eu era a pessoa desatualizada que nunca sabia de nada sobre o que acontecia na
+          cidade. Ao perguntar aos meus amigos como eles ficavam sabendo de tanta coisa a resposta foi
+          clara: <b>conhecido
+            meu ia participar e me contou</b>.
+        </p>
+        <p>
+          Então percebi que todo compartilhamento de informação era feito no famoso “boca a boca”.
+          Como se não bastasse, outro acontecimento surgiu: <b>projetos sociais da universidade voltados a sociedade mas
+            que
+            não eram conhecidos pela sociedade</b>. Fica até confuso de entender. Mas é muito difícil alguém de fora do
+          círculo
+          acadêmico saber o que os alunos oferecem: aulas de dança, projeto de cheerleader infantil, treinos de futebol
+          americano, aulas de programação, oficinas de robótica, curso comunitário…
+        </p>
+        <p>
+          Precisa de mais evidências? Porque quando viajo nunca sei sobre os eventos locais que estão acontecendo? É
+          sempre sobre conhecer os pontos turísticos. Procuro na internet e sempre é “O que você não pode deixar de
+          fazer
+          em [Nome da cidade]”. E, quando fico sabendo de algo pelo jornal regional durante a hora do almoço,
+          provavelmente é tarde demais porque o evento já está acontecendo, não tem mais disponibilidade de ingressos e
+          acaba ainda hoje.
+        </p>
+      </div>
+    </div>
+    <div class="discovery">
+      <div class="title">
+        <h3>Descoberta</h3>
+        <p>Desk Research e Pesquisa Qualitativa</p>
+      </div>
+      <div class="text">
+        <p>
+          O problema foi, todas as evidências, até então, se limitavam a minha pessoa. Será que todos vivenciavam isso?
+        </p>
+        <p>
+          Assim, a Desk Research e a Pesquisa Qualitativa foram algo extremamente útil para entender mais a fundo se a
+          falta de acesso à cultura era um problema ligado somente à <b>falta de informação ou se existia algo mais</b>
+          que
+          poderia contribuir para isso.
+        </p>
+        <p>
+          E sabe o que aconteceu? Ao organizar os dados obtidos em uma tabela, os resultados de ambas as metodologias
+          foram muito parecidos.
+        </p>
+      </div>
+      <div class="img">
+        <img src="assets/projetos/cultura-viva/descoberta.png"
+          alt="tabela com os dados provindos da pesquisa qualitativa">
+      </div>
+      <div class="text">
+        <p>
+          Ao pesquisar sobre este cenário no Brasil e ao questionar alguns usuários sobre a dificuldade que enfrentavam
+          ao
+          tentar se informar sobre possíveis eventos, 3 grandes problemas foram citados:
+        </p>
+        <div class="text-margin">
+          <ul>
+            <li>1º. Falta de informação</li>
+            <li>2º. Alto custo financeiro</li>
+            <li>3º. Distância</li>
+          </ul>
+        </div>
+        <p>
+          Pelo visto, minhas experiências até ali foram comprovadas como algo que afeta grande parte da população…
+        </p>
+      </div>
+    </div>
+    <div class="quote red">
+      <div class="content">
+        <p>“Os espelhos são usados para ver o rosto; a arte para ver a alma”</p>
+        <span>George Bernard Shaw</span>
+      </div>
+    </div>
+    <div class="define">
+      <div class="title">
+        <h3>Definição</h3>
+        <p>Personas</p>
+      </div>
       <p>
-        O projeto Cultura Viva surgiu de um grande problema que observei durante minha rotina: falta de acesso a
-        informações relacionadas a eventos artísticos. Este foi o primeiro projeto completo e documentado que fiz
-        seguindo os fundamentos do Design Thinking (descobrir, definir, idealizar, prototipar e testar).
-        
-        <br>
-        <br>
-
-        <span style="font-weight: bold; color: #a6a5ff;">
-          Aqui acessiblidade e inclusão foram dois grandes fatores no momento de tomar decisões,
-        </span>
-        seja em uma tipografia pouco ornamentada, elementos de fácil entendimento, alto contraste ou responsividade. 
+        Depois de entender melhor qual problema gostaria de resolver, a criação de personas foi essencial para dar vida
+        aos meus usuários. Busquei não só explorar um grupo de pessoas com uma característica específica, mas imaginar a
+        sociedade como um todo e quem a Cultura Viva poderia impactar, conheça eles então:
       </p>
-    </div>
+      <div class="accordion-list">
+        <div class="accondion-item">
+          <button class="accordion">Alice, 27 anos</button>
+          <div class="panel">
+            <div class="profile">
+              <img src="assets/projetos/cultura-viva/persona1.png"
+                alt="foto de uma mulher ruiva com cabelo preso em um coque, usando um batom vermelho e sorrindo para a câmera">
+              <div class="item">
+                <p><b>Idade:</b> 27 anos</p>
+                <p><b>Gênero:</b> Mulher</p>
+                <p><b>Profissão:</b> Proprietária de uma loja de produtos naturais</p>
+                <p><b>Facilidade com tecnologia:</b> 10/10</p>
+                <p><b>Cidade:</b> Florianópolis - SC</p>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                <b>Características:</b> Alice costuma acordar às 5:30 da manhã todos os dias para conseguir fazer sua
+                rotina
+                diária
+                sem pressa antes de abrir sua loja. Prepara diferentes tipos de café todos os dias enquanto escuta o
+                jornal
+                da
+                manhã e mexe nas redes sociais para se informar das novidades do dia. Durante a noite realiza seções de
+                meditação e yoga em casa antes de finalizar o dia. Aos finais de semana gosta de viver diferentes
+                experiências
+                com seus amigos e visitar lugares da cidade que nunca foi.
+              </p>
+              <p>
+                <b>Biografia:</b> Formada em administração pela UFSC, Alice se mudou para Florianópolis sozinha para
+                estudar.
+                Ao
+                final da faculdade, enquanto estagiava em uma empresa local, percebeu que não levava o estilo de vida
+                que
+                queria e resolveu empreender com uma amiga.
+              </p>
+              <p>
+                <b>Necessidades:</b> Ao se mudar para Florianópolis, não conhecia nada nem ninguém, mas estava ciente
+                das
+                oportunidades que teria. Mesmo depois de tantos anos, sente que não conhece tudo, principalmente locais
+                pouco
+                conhecidos pela mídia e que, assim como ela, são independentes.
+              </p>
+              <p>
+                <b>Frustrações:</b> Já está repetindo as atividades dos finais de semana por não conhecer coisas novas
+                para
+                fazer,
+                mas não pode investir muito dinheiro em outras áreas da vida por conta da loja que precisa administrar.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="projeto-page-img right">
-      <img src="assets/projeto-item/cultura-viva3.png" alt="protótipo do projeto">
-      <img src="assets/projeto-item/cultura-viva4.png" alt="protótipo do projeto">
-    </div>
+        <div class="accondion-item">
+          <button class="accordion">Rita, 73 anos</button>
+          <div class="panel">
+            <div class="profile">
+              <img src="assets/projetos/cultura-viva/persona2.png"
+                alt="foto de uma mulher com cabelo preso em um coque, lenço amarrado na cabeça e sorrindo para a câmera">
+              <div class="item">
+                <p><b>Idade:</b> 73 anos</p>
+                <p><b>Gênero:</b> Mulher</p>
+                <p><b>Profissão:</b> Confeiteira aposentada</p>
+                <p><b>Facilidade com tecnologia:</b> 5/10</p>
+                <p><b>Cidade:</b> São Gonçalo - RJ</p>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                <b>Características:</b> Rita mora com a filha e o neto em São Gonçalo ao mesmo tempo que faz bolos sob
+                encomenda para a comunidade mesmo já estando aposentada, como uma forma de renda extra para ajudar com
+                as
+                contas de casa. Durante toda a manhã cuida da casa enquanto a filha está no trabalho e fica de olho no
+                neto de 4 anos até dar o horário de levá-lo na escola. Todas as novidades da cidade e do país são
+                acompanhadas pelo jornal local durante a manhã e o horário do almoço, mas Rita não deixa de ficar atenta
+                ao grupo no WhatsApp com as amigas.
+              </p>
+              <p>
+                <b>Biografia:</b> Rita não possui ensino superior e sempre trabalhou com confeitaria por gostar de criar
+                coisas novas. Passou pelos mais diversos estabelecimentos, desde pequenas padarias até um famoso
+                restaurante da cidade, antes de se aposentar. Criou a filha sozinha com ajuda da mãe e agora faz o mesmo
+                pelo neto. Mesmo com o salário da filha e sua aposentadoria, Rita decidiu fazer bolos para vender quando
+                percebeu que a situação financeira estava apertada, uma vez que a educação e cuidados com o neto
+                aumentam
+                a cada ano, algo que nem ela e a filha pensam em cortar já que só querem o melhor para o futuro dele.
+              </p>
+              <p>
+                <b>Necessidades:</b> Por passar muito tempo com o neto, às vezes gostaria de sair com ele para fazer
+                atividades diferentes, mas que não custassem muito. Sabe que a cidade tem muito a oferecer nesse
+                quesito,
+                mas nunca ficou sabendo a tempo dos programas, somente quando alguma amiga mandava fotos no grupo do
+                WhatsApp ou quando via na televisão. Quer que o neto tenha contato com o mundo, diretamente ou
+                indiretamente.
+              </p>
+              <p>
+                <b>Frustrações:</b> Percebe que o neto passa muito tempo brincando sozinho durante as manhãs antes da
+                aula
+                enquanto ela prepara alguma encomenda. Às vezes escuta ele contando animado sobre uma atividade que o
+                colega da escola fez e queria dar esse tipo de experiência ao neto, entretanto, não sabe onde se
+                informar
+                sobre esse tipo de coisa e muito menos sabe o que pode ou não confiar na internet.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="projeto-page-text">
-      <p>
-        O guia de estilos se baseou em trazer a sensação de criatividade e conforto, de modo que remetesse a arte
-        ao mesmo tempo que parecesse confiável e seguro.
-
-        <br>
-        <br>
-
-        Deste modo, as cores vibrantes e o branco, juntamente com uma fonte simples buscam
-        tornar o projeto acessível a todos os públicos, dando vida ao Cultura Viva e trazendo sua essência à tona.
-      </p>
+        <div class="accondion-item">
+          <button class="accordion">Ricardo, 37 anos</button>
+          <div class="panel">
+            <div class="profile">
+              <img src="assets/projetos/cultura-viva/persona3.png" alt="foto de um homem usando uma camisa azul clara">
+              <div class="item">
+                <p><b>Idade:</b> 37 anos</p>
+                <p><b>Gênero:</b> Homem</p>
+                <p><b>Profissão:</b> Empresário</p>
+                <p><b>Facilidade com tecnologia:</b> 10/10</p>
+                <p><b>Cidade:</b> São Paulo - SP</p>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                <b>Características:</b> Ricardo é casado e, junto com a esposa, moram em um grande apartamento em uma
+                região bem localizada de São Paulo. Sua empresa é responsável por selecionar artistas de todo o Brasil,
+                cujos trabalhos poderão ser expostos em grandes museus e galerias, fazer parte de um imóvel de luxo que
+                está em construção como parte do acervo pessoal do proprietário ou até mesmo tornar um nome reconhecido
+                no
+                mercado. Sua rotina costuma ser agitada, precisando se preocupar somente com seu trabalho, mas no tempo
+                livre gosta de descansar e sair com a esposa para restaurantes bem avaliados da cidade.
+              </p>
+              <p>
+                <b>Biografia:</b> Ricardo é formado em Economia com foco no mercado artístico, um interesse que adquiriu
+                durante suas viagens ao conhecer a cultura de cada local. Com muito trabalho, conseguiu criar sua
+                própria
+                empresa para fazer com que pequenos artistas alcancem grandes espaços.
+              </p>
+              <p>
+                <b>Necessidades:</b> Ricardo quer alcançar artistas que não são vistos pela sociedade e investir em seus
+                trabalhos. Não se importa de precisar viajar para diferentes lugares, atravessar a cidade ou ter que se
+                desdobrar ao máximo, ele quer se conectar com pessoas que muitas vezes não são conectáveis ainda.
+              </p>
+              <p>
+                <b>Frustrações:</b> Sua esposa costuma acompanhá-lo em diversas exposições, projetos, viagens e
+                oficinas,
+                uma vez que é formada em Artes Visuais, mas sente que muitos desses locais não possui o tipo de
+                profissional que procura. Se consegue achar um artista na internet, sente que provavelmente ele já está
+                consolidando sua carreira na área e o que Ricardo procura é de alguém que ainda não conseguiu isso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="projeto-page-img center">
-      <img src="assets/projeto-item/cultura-viva-cores.png" alt="paleta de cores">
-      <img src="assets/projeto-item/cultura-viva-tipografia.png" alt="tipografia">
-      <img src="assets/projeto-item/cultura-viva-icones.png" alt="ícones">
+    <div class="quote blue">
+      <div class="content">
+        <p>“Eu sonho com minha pintura e pinto meu sonho”</p>
+        <span>Vincent Van Gogh</span>
+      </div>
     </div>
-
-    <div class="projeto-page-text">
-      <p>
-        “É como abrir uma porta para um museu online, sempre há algo interessante para descobrir”
-      </p>
+    <div class="define">
+      <div class="title">
+        <h3>Definição</h3>
+        <p>Objetivos e Problemas Centrais</p>
+      </div>
+      <div class="text">
+        <p> Deste modo, após ter uma visão mais ampla sobre o cenário da sociedade brasileira foi possível formalizar o
+          que o Cultura Viva buscava resolver:
+        </p>
+        <ul>
+          <li><b>Objetivo:</b> Divulgação de eventos culturais de baixo custo e promoção de artistas independentes</li>
+          <li><b>Motivações:</b> Dar maior acesso à arte no país; Auxiliar a sociedade a conhecer os eventos que
+            acontecem na própria cidade; Aumentar a visibilidade de artistas independentes</li>
+          <li><b>Deve resolver:</b> Informar (muito bem) sobre os eventos programados; Facilitar o contato com a arte;
+            Aumentar a visibilidade de artistas; Ser fácil, rápido e intuitivo para se tornar uma ferramenta de ajuda e
+            não de estresse</li>
+          <li><b>Concorrentes:</b> Fever; Catraca Livre; Sympla; Eventbrite; Tickets for Fun; Instituições que divulgam
+            seus próprios eventos (Senai)</li>
+          <li><b>Vantagens competitivas:</b> Foco em eventos de baixo custo financeiro para participar; Somente
+            artistas/grupos com baixa visibilidade no mercado</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="button-box">
-      <a class="button-projeto-item" href="https://medium.com/@tatakuriki/estudo-de-caso-cultura-viva-b0bae0be8d1b" target="_blank"><button>Ler estudo de caso</button></a>
-      <a class="button-projeto-item" href="https://www.figma.com/design/TW7SkDCjUeHSF2XrynHMme/Cultura-Viva?m=auto&t=j3f7XxvTzM8A4tUS-1" target="_blank"><button>Ver projeto no Figma</button></a>
+    <div class="quote red">
+      <div class="content">
+        <p>“Temos a arte para não morrer da verdade”</p>
+        <span>Friedrich Nietzsche</span>
+      </div>
     </div>
-    
-    <div class="projeto-page-img center">
-      <img src="assets/projeto-item/cultura-viva-mockup.png" alt="mockup do projeto">
-      <img src="assets/projeto-item/cultura-viva-mockup2.png" alt="mockup do projeto">
+    <div class="idealize">
+      <div class="title">
+        <h3>Idealização</h3>
+      </div>
+      <div class="row">
+        <div class="text">
+          <p> Tendo a quantidade de informações necessárias para começar, o Cultura Viva passou por diversas etapas para
+            decidir como construir uma solução que atendesse as expectativas e necessidades do público-alvo.
+          </p>
+          <p>
+            A criação de brainstormings possibilitou que diversas funcionalidades fossem citadas, mas foi necessário
+            filtrá-las para se adequar ao curto tempo de execução que o projeto deveria ser entregue.
+          </p>
+        </div>
+        <img src="assets/projetos/cultura-viva/brainstorm.png" alt="imagem contendo anotações a mão">
+      </div>
+      <div class="row">
+        <img src="assets/projetos/cultura-viva/site-map.png" alt="mapa do site do projeto, feito a mão">
+        <div class="text">
+          <p> Claro que tais funcionalidades podem ser incrementadas em versões futuras do Cultura Viva, mas naquele
+            momento o foco era criar o necessário para tornar tudo real. O mapa do site se tornou um caos, porque mesmo
+            com a filtragem após a etapa de brainstorming, muita coisa ainda havia passado despercebido e tiveram que
+            ser removidas ou alteradas novamente.
+          </p>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Mas no final deu tudo certo :)
+          <br>
+          E um wireframe lindíssimo surgiu…
+        </p>
+      </div>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="fit-content" height="450"
+        src="https://embed.figma.com/design/TW7SkDCjUeHSF2XrynHMme/Cultura-Viva?node-id=0-1&embed-host=share"
+        allowfullscreen></iframe>
     </div>
-    <div class="projeto-page-img center">
-      <img src="assets/projeto-item/cultura-viva-mockup3.png" alt="mockup do projeto">
-      <img src="assets/projeto-item/cultura-viva-mockup4.png" alt="mockup do projeto">
+    <div class="quote blue">
+      <div class="content">
+        <p>“Eu pinto flores para que elas não morram”</p>
+        <span>Frida Kahlo</span>
+      </div>
     </div>
-    <div class="projeto-page-img center">
-      <img src="assets/projeto-item/cultura-viva-mockup5.png" alt="mockup do projeto">
-      <img src="assets/projeto-item/cultura-viva-mockup6.png" alt="mockup do projeto">
+    <div class="style-guide">
+      <div class="title">
+        <h3>Guia de Estilos</h3>
+      </div>
+      <div class="text">
+        <p>
+          A essa altura do campeonato eu já estava cada vez mais animada para começar a brincar com cores e logo de cara
+          sabia o que queria: <b>chamar a atenção</b>.
+        </p>
+        <p>
+          Escolhi cores primárias e secundárias que nunca havia trabalho em conjunto para sair da minha zona de
+          conforto, até porque, o Cultura Viva estava chegando para mudar a realidade de muitas pessoas, inclusive a
+          minha.
+        </p>
+      </div>
+      <div class="img">
+        <img src="assets/projetos/cultura-viva/colors.png" alt="paleta de cores do projeto">
+      </div>
+      <div class="text">
+        <p>
+          A escolha de tipografia, ícones e logo veio de forma tão natural após isso que às vezes acho que tudo já
+          estava combinado antes. Queria algo que passasse <b>confiança e conforto</b>, apenas.
+        </p>
+      </div>
+      <div class="img-gallery">
+        <div class="img-row">
+          <img src="assets/projetos/cultura-viva/tipografia1.png" alt="tipografia do projeto">
+          <img src="assets/projetos/cultura-viva/tipografia2.png" alt="tipografia do projeto">
+        </div>
+        <div class="img-row">
+          <img src="assets/projetos/cultura-viva/icons.png" alt="ícones do projeto">
+          <img src="assets/projetos/cultura-viva/logo.png" alt="logo do projeto">
+        </div>
+      </div>
+      <div class="text central">
+        <p>
+          (Aos meus colegas designers gráficos, perdão pela logo, podemos ver que isso, claramente, não é meu forte. Mas
+          eu meio que gostei?)
+        </p>
+      </div>
     </div>
-
-  </div>
+    <div class="quote red">
+      <div class="content">
+        <p>“A arte é um instante de eternidade e perfeição”</p>
+        <span>V. Avelino</span>
+      </div>
+    </div>
+    <div class="prototype">
+      <div class="title">
+        <h3>Prototipação</h3>
+      </div>
+      <div class="text">
+        <p>
+          E como em um passe de mágica de 7 dias, o Cultura Viva nasceu (em versão web e mobile, tá bom ou quer mais?)
+        </p>
+      </div>
+      <div class="img-gallery">
+        <img src="assets/projetos/cultura-viva/alta-fidelidade2.png" alt="protótipo de alta fidelidade">
+        <div class="img-row">
+          <img src="assets/projetos/cultura-viva/alta-fidelidade5.png" alt="protótipo de alta fidelidade">
+          <img src="assets/projetos/cultura-viva/alta-fidelidade6.png" alt="protótipo de alta fidelidade">
+        </div>
+        <div class="img-row">
+          <img src="assets/projetos/cultura-viva/alta-fidelidade4.png" alt="protótipo de alta fidelidade">
+          <img src="assets/projetos/cultura-viva/alta-fidelidade1.png" alt="protótipo de alta fidelidade">
+        </div>
+        <img src="assets/projetos/cultura-viva/alta-fidelidade3.png" alt="protótipo de alta fidelidade">
+        <div class="text central">
+          <p><b>E assim, surgiu o Cultura Viva, cujo objetivo é divulgar de eventos culturais de baixo custo e promover
+              artistas independentes.</b></p>
+        </div>
+      </div>
+    </div>
 </body>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+
+        // recalcula depois para garantir que tudo caberá
+        setTimeout(() => {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }, 200);
+      }
+    });
+  }
+
+</script>
 
 </html>

@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Mulish";
+  background-color: transparent;
+}
+
+.cultura-viva-container {
+  width: 100%;
+  padding: 24px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cultura-viva-container .banner {
+  width: 100%;
+  height: calc(100vh - 48px);
+  background-image: url(/assets/projetos/cultura-viva/banner.jpg);
+  background-size: cover;
+  border-radius: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 40px;
+}
+
+.cultura-viva-container .banner h1 {
+  color: #fff4f4;
+  font-family: Anton;
+  font-size: 230px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 238px;
+  mix-blend-mode: difference;
+  background-color: transparent;
+  width: 50%;
+}
+
+.cultura-viva-container .note {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.cultura-viva-container .note div {
+  background-color: #cd4a45;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-2.01deg);
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.cultura-viva-container .note div p {
+  background-color: transparent;
+  color: #f8f8f8;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.text-margin {
+  border-left: 6px solid #45c8cd;
+  padding: 0 16px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.title h3 {
+  font-size: 24px;
+  font-weight: 900;
+  background: #bcedf6;
+  width: fit-content;
+  padding: 0 8px;
+}
+
+.title p {
+  font-weight: 700;
+}
+
+.text p b,
+.text ul li b {
+  font-weight: bold;
+}
+
+.problem {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problem .text {
+  background-color: #cd4a45;
+  padding: 60px 60px 60px 250px;
+  border-radius: 100px 16px 16px 100px;
+}
+
+.problem .text p,
+.problem .text h3,
+.problem .text b {
+  color: #f8f8f8;
+}
+
+.problem .img {
+  margin-right: -180px;
+  z-index: 9;
+}
+
+.discovery .img img {
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.discovery .text-margin ul li {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.quote {
+  width: 100%;
+  height: 96px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote.red {
+  background: var(
+    --Gradient-red,
+    linear-gradient(90deg, #af3d35 0%, #cd4a45 51.5%, #fac172 99.99%)
+  );
+}
+
+.quote.blue {
+  background: var(
+    --Gradient-blue,
+    linear-gradient(90deg, #fac172 0%, #45c7cd 100%)
+  );
+}
+
+.quote .content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 0px;
+}
+
+.quote .content p {
+  color: #f8f8f8;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.quote .content span {
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.intro,
+.define,
+.idealize,
+.style-guide,
+.discovery,
+.prototype {
+  width: 65%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.accordion {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: #000;
+  float: right;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active,
+.accordion:hover {
+  background-color: #f1f1f1;
+}
+
+.active {
+  border-radius: 16px 16px 0 0;
+}
+
+.panel {
+  padding: 0 32px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f1f1f1;
+  border-radius: 0 0 16px 16px;
+}
+
+.profile {
+  display: flex;
+  padding-top: 32px;
+  gap: 24px;
+}
+
+.profile img {
+  height: 211.6px;
+  border-radius: 16px;
+}
+
+.profile .item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile .item p b {
+  font-weight: bold;
+}
+
+.panel .text {
+  padding-bottom: 32px;
+}
+
+.define ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.idealize .row {
+  display: flex;
+  gap: 32px;
+  padding: 16px 0;
+  align-items: stretch;
+}
+
+.style-guide .img img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-gallery {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.img-gallery .img-row {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.img-gallery .img-row img {
+  border-radius: 16px;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.text.central {
+  text-align: center;
+}
+
+@media screen and (min-width: 1800px) {
+  .intro,
+  .define,
+  .idealize,
+  .style-guide,
+  .discovery,
+  .prototype {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .intro,
+  .define,
+  .idealize,
+  .style-guide,
+  .discovery,
+  .prototype {
+    width: 80%;
+  }
+
+  .problem {
+    width: 95%;
+  }
+
+  .discovery .img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro,
+  .define,
+  .idealize,
+  .style-guide,
+  .discovery,
+  .prototype {
+    width: 90%;
+  }
+
+  .problem {
+    width: 100%;
+  }
+
+  .problem .img {
+    display: none;
+  }
+
+  .problem .text {
+    padding: 60px;
+    border-radius: 16px;
+  }
+
+  .idealize .row {
+    flex-direction: column;
+  }
+
+  .idealize .row:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .img-gallery .img-row {
+    flex-direction: column;
+  }
+
+  .discovery .img img {
+    width: 100%;
+  }
+}
