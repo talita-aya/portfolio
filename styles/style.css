@@ -164,6 +164,16 @@ body {
   gap: 16px;
 }
 
+.projects .images .row a {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.projects .images .row a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 .footer {
   width: 100%;
   height: 50vh;
