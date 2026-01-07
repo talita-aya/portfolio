@@ -40,6 +40,9 @@ body {
 
 .container {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 
 .banner {
@@ -70,7 +73,6 @@ body {
 
 .about-me {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +131,6 @@ body {
 
 .projects {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -176,7 +177,6 @@ body {
 
 .footer {
   width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: end;
