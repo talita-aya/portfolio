@@ -113,15 +113,16 @@ body {
   gap: 32px;
 }
 
-.about-me .buttons button {
+.about-me .buttons a {
   font-family: "Pecita";
   font-size: 24px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.about-me .buttons button:hover {
+.about-me .buttons a:hover {
   transform: scale(1.1);
+  color: #50668b;
 }
 
 .about-me .buttons p {

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skoob</title>
+
+  <link rel="stylesheet" href="styles/skoob.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="skoob-container">
+    <div class="banner">
+      <div class="banner-content">
+        <div class="header">
+          <img src="assets/projetos/skoob/Logo.svg" alt="logo do Skoob">
+          <p>“É como organizar livros, mas acabar organizando momentos, fases e descobertas...”</p>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <button class="nav prev">
+              <img src="assets/projetos/skoob/chevron-left.svg" alt="Anterior">
+            </button>
+
+            <div class="carousel">
+              <div class="item">
+                <img src="./assets/projetos/skoob/book1.png" />
+              </div>
+
+              <div class="item">
+                <img src="./assets/projetos/skoob/book2.png" />
+              </div>
+
+              <div class="item">
+                <img src="./assets/projetos/skoob/book3.png" />
+              </div>
+
+              <div class="item">
+                <img src="./assets/projetos/skoob/book4.png" />
+              </div>
+
+              <div class="item">
+                <img src="./assets/projetos/skoob/book5.png" />
+              </div>
+            </div>
+
+            <button class="nav next">
+              <img src="assets/projetos/skoob/chevron-right.svg" alt="Próximo">
+            </button>
+          </div>
+
+          <!-- CAPTION FICA FORA DO CARROSSEL -->
+          <div class="caption" id="caption">
+            <img id="caption-img" alt="Avaliação" />
+            <span id="caption-text"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const books = [
+      {
+        text: "isso aqui é terapia disfarçada/5",
+        icon: "./assets/projetos/skoob/star.svg"
+      },
+      {
+        text: "terminei abraçando o livro/5",
+        icon: "./assets/projetos/skoob/star.svg"
+      },
+      {
+        text: "não era um livro, era um evento/5",
+        icon: "./assets/projetos/skoob/star.svg"
+      },
+      {
+        text: "não grita, sussurra/5",
+        icon: "./assets/projetos/skoob/star.svg"
+      },
+      {
+        text: "apanhei mentalmente e gostei/5",
+        icon: "./assets/projetos/skoob/star.svg"
+      }
+    ];
+    const items = document.querySelectorAll('.item');
+    const captionImg = document.getElementById('caption-img');
+    const captionText = document.getElementById('caption-text');
+    const carousel = document.querySelector('.carousel');
+
+    let currentIndex = 2;
+
+    /* ---------- CORE ---------- */
+
+    function updateCarousel(index) {
+      items.forEach((item, i) => {
+        item.className = 'item';
+
+        const diff = i - index;
+
+        if (diff === 0) {
+          item.classList.add('center');
+        }
+        else if (diff === -1 || diff === books.length - 1) {
+          item.classList.add('left');
+          item.style.setProperty('--offset', '-220px');
+        }
+        else if (diff === 1 || diff === -(books.length - 1)) {
+          item.classList.add('right');
+          item.style.setProperty('--offset', '220px');
+        }
+        else if (diff === -2 || diff === books.length - 2) {
+          item.classList.add('far-left');
+          item.style.setProperty('--offset', '-380px');
+        }
+        else if (diff === 2 || diff === -(books.length - 2)) {
+          item.classList.add('far-right');
+          item.style.setProperty('--offset', '380px');
+        }
+      });
+
+      // legenda
+      captionImg.style.opacity = 0;
+      captionText.style.opacity = 0;
+
+      setTimeout(() => {
+        captionImg.src = books[index].icon;
+        captionText.textContent = books[index].text;
+        captionImg.style.opacity = 1;
+        captionText.style.opacity = 1;
+      }, 150);
+    }
+
+    /* ---------- BOTÕES ---------- */
+
+    document.querySelector('.next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % books.length;
+      updateCarousel(currentIndex);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + books.length) % books.length;
+      updateCarousel(currentIndex);
+    });
+
+    /* ---------- CLICK DIRETO ---------- */
+
+    items.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel(currentIndex);
+      });
+    });
+
+    /* ---------- DRAG / SWIPE ---------- */
+
+    let startX = 0;
+    let isDragging = false;
+    const threshold = 50;
+
+    carousel.addEventListener('pointerdown', (e) => {
+      startX = e.clientX;
+      isDragging = true;
+      carousel.setPointerCapture(e.pointerId);
+    });
+
+    carousel.addEventListener('pointerup', (e) => {
+      if (!isDragging) return;
+
+      const diff = e.clientX - startX;
+
+      if (diff > threshold) {
+        currentIndex = (currentIndex - 1 + books.length) % books.length;
+        updateCarousel(currentIndex);
+      } else if (diff < -threshold) {
+        currentIndex = (currentIndex + 1) % books.length;
+        updateCarousel(currentIndex);
+      }
+
+      isDragging = false;
+      carousel.releasePointerCapture(e.pointerId);
+    });
+
+    carousel.addEventListener('pointerleave', () => {
+      isDragging = false;
+    });
+
+    /* ---------- INIT ---------- */
+    updateCarousel(currentIndex);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-size: 16px;
+  line-height: 28px;
+  background-color: transparent;
+  font-family: "Work Sans";
+}
+
+.skoob-container {
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skoob-container .banner {
+  width: 100%;
+  height: calc(100vh);
+  background-image: url(/assets/projetos/skoob/background.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.skoob-container .banner .banner-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skoob-container .banner-content .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skoob-container .banner-content .header p {
+  width: 30%;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+  opacity: 50%;
+  text-align: right;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 800px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  position: absolute;
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease;
+  cursor: pointer;
+}
+
+.item img {
+  width: 260px;
+  object-fit: cover;
+}
+
+.item.active {
+  transform: scale(1.15) translateX(0);
+  z-index: 10;
+}
+
+.item.center {
+  transform: translateX(0) scale(1.15);
+  z-index: 3;
+}
+
+/* LADOS */
+.item.left,
+.item.right {
+  transform: translateX(var(--offset)) scale(0.9);
+  z-index: 2;
+}
+
+/* EXTREMIDADES */
+.item.far-left,
+.item.far-right {
+  transform: translateX(var(--offset)) scale(0.75);
+  z-index: 1;
+}
+
+.nav {
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.caption {
+  margin-top: 48px;
+  padding: 8px 16px;
+  background: #005178;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.caption span {
+  font-family: "Work Sans";
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
