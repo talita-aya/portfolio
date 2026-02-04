@@ -182,8 +182,11 @@
   width: 60%;
 }
 
-.skoob-container .text.blue p, .text.gradient p,
-.skoob-container .text.blue b, .text.gradient b, .text.gradient p i {
+.skoob-container .text.blue p,
+.text.gradient p,
+.skoob-container .text.blue b,
+.text.gradient b,
+.text.gradient p i {
   color: #fff;
 }
 
@@ -388,4 +391,91 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+@media screen and (max-width: 1470px) {
+  .card {
+    height: 300px;
+  }
+
+  .problem {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skoob-container .banner-content .header {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .skoob-container .banner-content .header p {
+    text-align: center;
+  }
+
+  .skoob-container .banner .banner-content {
+    justify-content: start;
+    gap: 160px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .item.left,
+  .item.right,
+  .item.far-left,
+  .item.far-right {
+    display: none;
+  }
+
+  .skoob-container .text p,
+  .skoob-container .text b {
+    width: 70%;
+  }
+
+  .note {
+    width: 70%;
+  }
+
+  .skoob-container .note img {
+    position: absolute;
+    right: -40px;
+    top: 0px;
+  }
+
+  .skoob-container .title p {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .problem img {
+    width: 100%;
+  }
+
+  .solution-item, .solution-item.inverse {
+    flex-direction: column;
+  }
+
+  .solution-item p {
+    width: 115% !important;
+  }
+
+  .new-skoob {
+    flex-direction: column;
+  }
+
+  .problem.big .note {
+    width: 120% !important;
+  }
 }
