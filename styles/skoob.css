@@ -182,8 +182,8 @@
   width: 60%;
 }
 
-.skoob-container .text.blue p,
-.skoob-container .text.blue b {
+.skoob-container .text.blue p, .text.gradient p,
+.skoob-container .text.blue b, .text.gradient b, .text.gradient p i {
   color: #fff;
 }
 
@@ -323,7 +323,7 @@
   max-width: 100%;
   height: auto;
   flex: 1 1 250px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .problem .row p {
@@ -356,4 +356,36 @@
   margin-top: 0;
   width: 70%;
   transform: rotate(1.88deg);
+}
+
+.solution-container {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.text.gradient {
+  border-radius: 50px;
+  background: linear-gradient(168deg, #748caf 0.01%, #2b9ace 100.01%);
+  gap: 40px;
+}
+
+.solution-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 40px;
+}
+
+.solution-item.inverse {
+  flex-direction: row-reverse;
+}
+
+.new-skoob {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
