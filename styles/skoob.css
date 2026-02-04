@@ -259,7 +259,8 @@
   gap: 8px;
   border-radius: 24px;
   position: relative;
-  flex-grow: 1;
+  flex: 1 1 0;
+  box-sizing: border-box;
   overflow: hidden;
   height: 283px;
 }
@@ -449,21 +450,22 @@
     width: 90%;
     text-align: center;
   }
-  
+
   .cards-container {
     flex-direction: column;
     width: 70%;
   }
 
   .card {
-    height: 250px;
+    flex: 1;
   }
 
   .problem img {
     width: 100%;
   }
 
-  .solution-item, .solution-item.inverse {
+  .solution-item,
+  .solution-item.inverse {
     flex-direction: column;
   }
 
